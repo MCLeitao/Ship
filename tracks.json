@@ -1,0 +1,8 @@
+{
+  "genome": "sacCer3",
+  "sgdOther": ["Autonomously Replicating Sequence", "Telomeric", "Mating type cassette", "LTR", "Retrotransposon",
+              "Replication origin", "Centromere"],
+  "mrna": [],
+  "est": [],
+  "esRegGeneToMotif": []
+}

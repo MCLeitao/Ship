@@ -1,0 +1,13 @@
+{
+  "gene":"",
+  "ncRNA_gene": "",
+  "pseudogene": ["mRNA", "pseudogenic-transcript", "CDS"],
+  "centromere":"",
+  "telomere":"",
+  "long_terminal_repeat":"",
+  "mobile_genetic_element":"",
+  "origin_of_replication":"",
+  "transposable_element_gene":"",
+  "meiotic_recombination_region":"",
+  "sequence_feature":""
+}
