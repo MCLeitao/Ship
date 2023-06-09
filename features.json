@@ -1,7 +1,7 @@
 {
   "gene":"",
   "ncRNA_gene": "",
-  "pseudogene": ["mRNA", "pseudogenic-transcript", "CDS"],
+  "pseudogene": ["mRNA", "pseudogenic_transcript", "CDS"],
   "centromere":"",
   "telomere":"",
   "long_terminal_repeat":"",
