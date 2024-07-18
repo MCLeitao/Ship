@@ -129,9 +129,3 @@ pGSH List (with Regulatory Analysis)
 ## Reference
 Please cite the following preprint when referencing Ship.
 
-
-## Copyright
-
-
-
-## License
