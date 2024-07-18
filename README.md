@@ -11,9 +11,16 @@ The software performs a combinatorial analysis to identify **intergenic regions*
 
 ## Contents
 
-
-
 ## Description
+
+## Features
+
+## Usage
+
+### Inputs
+
+### Navigating
+
 ```
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
    Welcome on Board Sailor!   
@@ -39,23 +46,13 @@ BK006934.2 BK006943.2, BK006943.2 BK006944.2, BK006944.2 BK006945.2, BK006945.2 
 BK006947.3 BK006948.2, BK006948.2 BK006949.2, BK006949.2 
 
 ---------- Types that will be processed ----------
-gene = 6600
-ncRNA_gene = 424
-transposable_element_gene = 91
-pseudogene = 12
+gene = 6600        transposable_element_gene = 91
+ncRNA_gene = 424   pseudogene = 12
+
 -------- Types that will not be processed --------
-chromosome = 17
-mRNA = 6600
-exon = 7507
-CDS = 6913
-ncRNA = 18
-tRNA = 299
-snoRNA = 77
-transposable_element = 91
-pseudogenic_transcript = 12
-snRNA = 6
-five_prime_UTR = 4
-rRNA = 24
+chromosome = 17   CDS = 6913   snoRNA = 77                   snRNA = 6  
+mRNA = 6600       ncRNA = 18   transposable_element = 91     five_prime_UTR = 4
+exon = 7507       tRNA = 299   pseudogenic_transcript = 12   rRNA = 24
 --------------------------------------------------
    Interval (bp)                   Tandem            Divergent           Convergent
          Overlapping                 142                 264                 184
@@ -77,12 +74,51 @@ Total Intervals flanked by Convergent genes = 1852
 Number of complete overlaps between genes   = 191
 ```
 ```
-`
+Would you like to plot the Genes chart? (Y/N): Y
+Types of flanking genes: 
+[1] CONVERGENT (+ -) 
+[2] DIVERGENT (- +) 
+[3] TANDEM (+ +/- -)
+> Enter your choice: 1
+> Minimum size of the intergenic region (Standard 1500): 1300
+> Maximum size of the intergenic region (Standard 2000): 2200
+```
+```
+Do you want to perform analysis on the UCSC Database? (Y/N) Y
+Do you want to perform Cross References? (Y/N) Y
+Do you want to perform regulatory analysis? (Y/N) Y
+Enter the species to be analyzed: _Target organism_
+Enter the regulatory build Path and File name: /Users/user1/Documents/target_organism.Regulatory_Build.regulatory_features.gff
+```
+```
+------------------------------
+PROCESSING ...
+------------------------------
+[1] Selecting the intergenic regions with size between 1500 to 2000 bp.
+[2] Searching for sequences at NCBI.
+[3] Crossing information with other databases.
+Wait for processing... Go have a cup of coffee.
+☕︎︎ ☕︎︎ ☕︎︎ ☕︎︎ ☕︎︎ ☕︎︎ ☕︎︎ ☕︎︎
+```
+```
+------------------------------
+RESULT
+------------------------------
+File generated with the results: /Users/user1/Documents/target_organism_result_SHIP.txt
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Do you want to analyze another GFF file? ...
+```
 
-## Features
+### Outputs
 
+Genomic Overview
+![Saccharomyces_cerevisiae R64-1-1 49 _plot](https://github.com/user-attachments/assets/ee3f9a87-6d5d-4fbe-9ff5-0cd766eafcdd)
 
-## Usage
+pGSH List (without Regulatory Analysis)
+<img width="1002" alt="Screenshot 2024-07-18 at 16 07 22" src="https://github.com/user-attachments/assets/53abd587-9cec-4e4a-bdf8-7d0b2ad367f5">
+
+pGSH List (with Regulatory Analysis)
+
 
 
 
