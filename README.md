@@ -118,6 +118,7 @@ pGSH List (without Regulatory Analysis)
 <img width="1002" alt="Screenshot 2024-07-18 at 16 07 22" src="https://github.com/user-attachments/assets/53abd587-9cec-4e4a-bdf8-7d0b2ad367f5">
 
 pGSH List (with Regulatory Analysis)
+![Screenshot 2024-07-19 at 19 24 25](https://github.com/user-attachments/assets/0c40effb-26db-4847-80ee-b7ad23b38342)
 
 
 
