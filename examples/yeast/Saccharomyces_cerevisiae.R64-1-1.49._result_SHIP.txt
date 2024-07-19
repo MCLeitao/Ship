@@ -1,0 +1,277 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+['BK006934.2', 'sgd', 'gene', 17392, 17841, '.', '+', '.', 'ID=gene:YHL041W;biotype=protein_coding;description=Putative protein of unknown function%3B conserved across S. cerevisiae strains [Source:SGD%3BAcc:S000001033];gene_id=YHL041W;logic_name=sgd\n', 'V']
+['BK006934.2', 'sgd', 'gene', 19088, 20971, '.', '-', '.', 'ID=gene:YHL040C;Name=ARN1;biotype=protein_coding;description=ARN family transporter for siderophore-iron chelates%3B responsible for uptake of iron bound to ferrirubin%2C ferrirhodin%2C and related siderophores%3B protein increases in abundance and relocalizes to the vacuole upon DNA replication stress [Source:SGD%3BAcc:S000001032];gene_id=YHL040C;logic_name=sgd\n', 'V']
+------------------------------------------------------------------------------------
+Length = 1246bp
+>BK006934.2:17842-19087 TPA_inf: Saccharomyces cerevisiae S288C chromosome VIII, complete sequence
+ACGAGATATCAAGATACCGGACCCCCTTTTTTACAGTAGATAAACCGGAGAATACCAGAGTATTTTCCAAATATAGAAAGAAAAGGGTTATTTCTAATTCTCGCTCTCTGTTTTTGGAAGACGAAGTTATTAAGTTTTTGCCTGCATTTGGAAACCTGCTGCGATTTCCTCGATATTGAAAAAAAGTAAAGGCCACAAGAAAAAAATTTTATAGTTGCCTTGGGATGACAAACAGCTGGATATTATTATTATTGGCAGTAGCCCTAGTATGTTGTAAAAGAGTTATTTACAAGATTTTCTTTTTACGAGGGCACGTTATAACGTTGGACTCAAGGGGAAAGTTTCTAAAGGCACAAATAAACATTATGGGCTTATGGAAAAGGTGCCAGTGACGTGATGGTTACGCCTCGCCATTCATGTTAAACGATGTAAATTACTTCTATTACAGGATATTTTCTTGCCTTCGTTTAGCGTATTATCAGCCCTTTTCTCTGTTTTACAAATAAGGAAAGCGCGACGTCAGCCAATGTGAATACCGTTTATGGTTCAACCTTGTCTACATTTAGCTACTTTTTTTTCTTTTTCGAAAGCATTGATGCGTTTGCTCGGTGATTACATCATAATTAGTGAACACACGCAGCAAACCGTGATCACTGCGAGTATTCTACTCTTGTCATCCCAGACTACAAGTAAATCATACTATCTCTTTACAAGCTGAATGGAATGGGGCTTAGCCGACTGGAAGGATAGGCTTGCCAAGGAAAAACAAAGAAAAAAAGGCGAGTGGATTTAAGATTCAGCGACCGCCTGTCTTCCCTTCCTTTTTCACCATAGTTGACATAACACTTTATCTTGTCTTTATATCTCTTCTCGAAGCACTTATGATAACCGACTTCAAAGTCAAGGTACATAATTATTCAACGCCTCTAATTTTTCACTTGTTATGAAGCAAGTGCTGAGACAACTGGCCAATCGATGTTATAAACAGGCAGAACAAAAGAAGTAAAGATATTACTCTGTTACGTAATATTAAGTAGTGCCGCACTATACATGTAGATATGCATATACTGTTATGGTAAAAGGAATATGCAAAGAACTAGACATTTCTGATCTTTTCTTTTCTTGGTTATGATCATTAGAATGGTAGAGTCTTGTAGAGAGGAAAAAGTAGGAGGTGACACCGTATATTTTGGGCAATATAGTCATGGAAAGTGATATCAAGCAATCATGCAACGTAAACATCAAC
+------------------------------------------------------------------------------------
+Cross References : YHL041W
+------------------------------------------------------------------------------------
+'version':'1', 'db_display_name':'UniProtKB/Swiss-Prot', 'info_type':'DEPENDENT', 'primary_id':'P38730', 'dbname':'Uniprot/SWISSPROT', 'display_id':'P38730', 'description':'Uncharacterized protein YHL041W', .
+'version':'0', 'db_display_name':'INSDC protein ID', 'info_type':'DEPENDENT', 'primary_id':'AAB65053.1', 'dbname':'protein_id', 'display_id':'AAB65053.1', 'description':'None', .
+'description':'None', 'display_id':'AAS56713.1', 'dbname':'protein_id', 'version':'0', 'primary_id':'AAS56713.1', 'info_type':'DEPENDENT', 'db_display_name':'INSDC protein ID', .
+'display_id':'DAA80256.1', 'dbname':'protein_id', 'description':'None', 'db_display_name':'INSDC protein ID', 'primary_id':'DAA80256.1', 'info_type':'DEPENDENT', 'version':'0', .
+'db_display_name':'STRING', 'info_type':'DEPENDENT', 'primary_id':'4932.YHL041W', 'version':'0', 'dbname':'STRING', 'display_id':'4932.YHL041W', 'description':'None', .
+'version':'0', 'info_type':'CHECKSUM', 'primary_id':'UPI000013B205', 'db_display_name':'UniParc', 'description':'None', 'dbname':'UniParc', 'display_id':'UPI000013B205', .
+
+
+
+------------------------------------------------------------------------------------
+Cross References : YHL040C
+------------------------------------------------------------------------------------
+'description': 'None', 'display_id': '856345', 'dbname': 'EntrezGene', 'primary_id': '856345', 'info_type': 'DEPENDENT', 'db_display_name': 'NCBI gene (formerly Entrezgene)', 'version': '0', .
+'description': 'ARN family transporter for siderophore-iron chelates; responsible for uptake of iron bound to ferrirubin, ferrirhodin, and related siderophores; protein increases in abundance and relocalizes to the vacuole upon DNA replication stress', 'dbname': 'SGD_GENE', 'display_id': 'ARN1', 'info_type': 'DIRECT', 'primary_id': 'S000001032', 'db_display_name': 'SGD gene name', 'version': '0', .
+'db_display_name': 'UniProtKB/Swiss-Prot', 'info_type': 'DEPENDENT', 'primary_id': 'P38731', 'version': '1', 'dbname': 'Uniprot/SWISSPROT', 'display_id': 'P38731', 'description': 'Siderophore iron transporter ARN1', .
+'db_display_name': 'RefSeq peptide', 'info_type': 'DEPENDENT', 'primary_id': 'NP_011823.1', 'version': '0', 'dbname': 'RefSeq_peptide', 'display_id': 'NP_011823.1', 'description': 'None', .
+'primary_id': 'NM_001179120.1', 'info_type': 'DEPENDENT', 'db_display_name': 'RefSeq DNA', 'version': '0', 'description': 'None', 'display_id': 'NM_001179120.1', 'dbname': 'RefSeq_dna', .
+'db_display_name': 'GO', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0005768', 'version': '0', 'dbname': 'GO', 'display_id': 'GO:0005768', 'description': 'endosome', 'linkage_types': '['IDA']', .
+'info_type': 'DEPENDENT', 'primary_id': 'GO:0005886', 'db_display_name': 'GO', 'version': '0', 'description': 'plasma membrane', 'dbname': 'GO', 'display_id': 'GO:0005886', 'linkage_types': '['IDA']', .
+'info_type': 'DEPENDENT', 'primary_id': 'GO:0005887', 'db_display_name': 'GO', 'version': '0', 'description': 'integral component of plasma membrane', 'dbname': 'GO', 'display_id': 'GO:0005887', 'linkage_types': '['IBA']', .
+'db_display_name': 'GO', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0006811', 'version': '0', 'dbname': 'GO', 'display_id': 'GO:0006811', 'description': 'ion transport', 'linkage_types': '['IEA']', .
+'description': 'endosome membrane', 'display_id': 'GO:0010008', 'dbname': 'GO', 'linkage_types': '['IEA']', 'primary_id': 'GO:0010008', 'info_type': 'DEPENDENT', 'db_display_name': 'GO', 'version': '0', .
+'version': '0', 'primary_id': 'GO:0015343', 'info_type': 'DEPENDENT', 'db_display_name': 'GO', 'linkage_types': '['IMP']', 'description': 'siderophore transmembrane transporter activity', 'display_id': 'GO:0015343', 'dbname': 'GO', .
+'description': 'siderophore transport', 'dbname': 'GO', 'display_id': 'GO:0015891', 'linkage_types': '['IMP']', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0015891', 'db_display_name': 'GO', 'version': '0', .
+'linkage_types': '['IDA']', 'description': 'cytoplasmic vesicle', 'dbname': 'GO', 'display_id': 'GO:0031410', 'version': '0', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0031410', 'db_display_name': 'GO', .
+'version': '0', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0033214', 'db_display_name': 'GO', 'linkage_types': '['IBA']', 'description': 'iron assimilation by chelation and transport', 'dbname': 'GO', 'display_id': 'GO:0033214', .
+'db_display_name': 'INSDC protein ID', 'primary_id': 'AAB65052.1', 'info_type': 'DEPENDENT', 'version': '0', 'display_id': 'AAB65052.1', 'dbname': 'protein_id', 'description': 'None', .
+'version': '0', 'info_type': 'DEPENDENT', 'primary_id': 'DAA06646.1', 'db_display_name': 'INSDC protein ID', 'description': 'None', 'dbname': 'protein_id', 'display_id': 'DAA06646.1', .
+'description': 'None', 'display_id': '4932.YHL040C', 'dbname': 'STRING', 'primary_id': '4932.YHL040C', 'info_type': 'DEPENDENT', 'db_display_name': 'STRING', 'version': '0', .
+'display_id': 'UPI000013B204', 'dbname': 'UniParc', 'description': 'None', 'version': '0', 'db_display_name': 'UniParc', 'primary_id': 'UPI000013B204', 'info_type': 'CHECKSUM', .
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+['BK006934.2', 'sgd', 'gene', 292943, 293437, '.', '+', '.', 'ID=gene:YHR095W;biotype=protein_coding;description=Dubious open reading frame%3B unlikely to encode a functional protein%2C based on available experimental and comparative sequence data [Source:SGD%3BAcc:S000001137];gene_id=YHR095W;logic_name=sgd\n', 'V']
+['BK006934.2', 'sgd', 'gene', 294669, 296447, '.', '-', '.', 'ID=gene:YHR096C;Name=HXT5;biotype=protein_coding;description=Hexose transporter with moderate affinity for glucose%3B induced in the presence of non-fermentable carbon sources%2C induced by a decrease in growth rate%2C contains an extended N-terminal domain relative to other HXTs%3B HXT5 has a paralog%2C HXT3%2C that arose from the whole genome duplication [Source:SGD%3BAcc:S000001138];gene_id=YHR096C;logic_name=sgd\n', 'V']
+------------------------------------------------------------------------------------
+Length = 1231bp
+>BK006934.2:293438-294668 TPA_inf: Saccharomyces cerevisiae S288C chromosome VIII, complete sequence
+ATTTAGGACCTACAATTGTTGTCTCTTCTGCTTGAACCAATAAGCCCTAGAAACCTTACACCCTAATTTGCACAAGAAAACTACGAAAAAATTTTTTCCTCTTTTTTCCGCAGCTCCAATCTCGCCCTGCTATTTTTTTGGTTCGGAGAAAAATAGTCGGTCGATATGAATTGAAGTTTCATTGTGGCCACTCGTTTAGGAATGGAATAACCTCCGCGAATGGAAAAAAAGAACTCGGAATATCAAAAATTCCGGCTCAAAGGAAAAATTTGCTTCAGGAGGGGGGAATTATATTCCAGATGAGACCTGCAAGGATTTCTGTGTGAGGTTTTCTCGGAGGAATAATAGTTTTCCAAAAATTACTTTTGGCAACTACGTGAATATAATTGACTACGGATATCCTTCGAGAAGGCCATAAAAAGAACCGTGACAGGGCCAAACAGAAAAATAATGAAGACAAGTTTGCTTTTTCTCTCACTGTATTTGAGGATCGGAAGCTTTTTGCACTGAAAATATTCTGGGTTAACAAGGTTTAAAGAAGCAAACTGCCACAAAGTATATGAGAGTATAACCGGACGGTACCTATACTTTGAAGTTGGAATAAATACGGGGTAGACAAAAAGGATGTGTTTCTGTATGTCTGATGAGAATGATGTCATCAAAGAACGTAAACAACAGTAACTGTCTATATTCTTGCTTTTTATTATGCGCTGTTACAGCAGGTAGCGGAGTTTTCAGTTCTTTCCCTAGTATGTAGTATGAAGGATAATACGGTAAAAGAACGGGGCTCTTGATTCATCATATAAATTTATTTTCCCCTGTTGAAACCTCGAGTAACCGTCCTCACTGTTTTATTACCAAGGATGAGCTCGAGCAGTTGTAAGAGAGAAGTGGGCAGAAAAGTATAAGTAACAAGAAACGATATACAAGTTCTTGTTGTTAGGCGTAGCAACCCTTTCTCCCCTGGTTTGATCCTACTTAAAATAAAGAAAAAAAACAAAAACGTCATGATGATTTTGATATTATTAGACATACGTAATTTAGTTGAATTAAAGGAATAACAGGCAGCCCTATTAACCACGGACAAAATATCTCTGCATATGATTGCATTATTTGTAAACTATGAATGAACATATGAACGAAAACGATTAATATTAATATTAAAATTTGAAATGGTGCAATGCTGAACATTGCAAGTATGCGAAAATAGTTGATCCTACACTACAAGAGA
+------------------------------------------------------------------------------------
+Cross References : YHR095W
+------------------------------------------------------------------------------------
+'description':'Putative uncharacterized protein YHR095W', 'info_type':'DEPENDENT', 'primary_id':'P38808', 'db_display_name':'UniProtKB/Swiss-Prot', 'display_id':'P38808', 'dbname':'Uniprot/SWISSPROT', 'version':'2', .
+'display_id':'AAB68924.1', 'dbname':'protein_id', 'primary_id':'AAB68924.1', 'db_display_name':'INSDC protein ID', 'info_type':'DEPENDENT', 'description':'None', 'version':'0', .
+'version':'0', 'display_id':'4932.YHR095W', 'dbname':'STRING', 'db_display_name':'STRING', 'primary_id':'4932.YHR095W', 'info_type':'DEPENDENT', 'description':'None', .
+'version':'0', 'description':'None', 'display_id':'UPI000216F968', 'dbname':'UniParc', 'info_type':'CHECKSUM', 'db_display_name':'UniParc', 'primary_id':'UPI000216F968', .
+
+
+
+------------------------------------------------------------------------------------
+Cross References : YHR096C
+------------------------------------------------------------------------------------
+'primary_id': '856496', 'info_type': 'DEPENDENT', 'db_display_name': 'NCBI gene (formerly Entrezgene)', 'version': '0', 'description': 'None', 'display_id': '856496', 'dbname': 'EntrezGene', .
+'version': '0', 'db_display_name': 'SGD gene name', 'primary_id': 'S000001138', 'info_type': 'DIRECT', 'display_id': 'HXT5', 'dbname': 'SGD_GENE', 'description': 'Hexose transporter with moderate affinity for glucose; induced in the presence of non-fermentable carbon sources, induced by a decrease in growth rate, contains an extended N-terminal domain relative to other HXTs; HXT5 has a paralog, HXT3, that arose from the whole genome duplication', .
+'info_type': 'DEPENDENT', 'primary_id': 'P38695', 'db_display_name': 'UniProtKB/Swiss-Prot', 'version': '1', 'description': 'Probable glucose transporter HXT5', 'dbname': 'Uniprot/SWISSPROT', 'display_id': 'P38695', .
+'dbname': 'RefSeq_peptide', 'display_id': 'NP_011964.1', 'description': 'None', 'db_display_name': 'RefSeq peptide', 'info_type': 'DEPENDENT', 'primary_id': 'NP_011964.1', 'version': '0', .
+'dbname': 'RefSeq_dna', 'display_id': 'NM_001179226.1', 'description': 'None', 'db_display_name': 'RefSeq DNA', 'info_type': 'DEPENDENT', 'primary_id': 'NM_001179226.1', 'version': '0', .
+'description': 'proton symporter activity', 'dbname': 'GO', 'display_id': 'GO:0005351', 'linkage_types': '['IBA']', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0005351', 'db_display_name': 'GO', 'version': '0', .
+'description': 'fructose transmembrane transporter activity', 'dbname': 'GO', 'display_id': 'GO:0005353', 'linkage_types': '['IGI']', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0005353', 'db_display_name': 'GO', 'version': '0', .
+'description': 'glucose transmembrane transporter activity', 'display_id': 'GO:0005355', 'dbname': 'GO', 'linkage_types': '['IDA']', 'primary_id': 'GO:0005355', 'info_type': 'DEPENDENT', 'db_display_name': 'GO', 'version': '0', .
+'version': '0', 'primary_id': 'GO:0005886', 'info_type': 'DEPENDENT', 'db_display_name': 'GO', 'linkage_types': '['ISS']', 'description': 'plasma membrane', 'display_id': 'GO:0005886', 'dbname': 'GO', .
+'version': '0', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0008645', 'db_display_name': 'GO', 'linkage_types': '['IGI']', 'description': 'hexose transport', 'dbname': 'GO', 'display_id': 'GO:0008645', .
+'display_id': 'GO:0015578', 'dbname': 'GO', 'description': 'mannose transmembrane transporter activity', 'linkage_types': '['IGI']', 'db_display_name': 'GO', 'primary_id': 'GO:0015578', 'info_type': 'DEPENDENT', 'version': '0', .
+'version': '0', 'db_display_name': 'GO', 'primary_id': 'GO:0015758', 'info_type': 'DEPENDENT', 'linkage_types': '['IMP']', 'display_id': 'GO:0015758', 'dbname': 'GO', 'description': 'glucose transport', .
+'version': '0', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0016020', 'db_display_name': 'GO', 'linkage_types': '['IEA']', 'description': 'membrane', 'dbname': 'GO', 'display_id': 'GO:0016020', .
+'version': '0', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0016021', 'db_display_name': 'GO', 'linkage_types': '['IEA']', 'description': 'integral component of membrane', 'dbname': 'GO', 'display_id': 'GO:0016021', .
+'version': '0', 'db_display_name': 'GO', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0022857', 'linkage_types': '['IEA']', 'dbname': 'GO', 'display_id': 'GO:0022857', 'description': 'transmembrane transporter activity', .
+'db_display_name': 'GO', 'primary_id': 'GO:0046323', 'info_type': 'DEPENDENT', 'version': '0', 'display_id': 'GO:0046323', 'dbname': 'GO', 'description': 'glucose import', 'linkage_types': '['IBA']', .
+'db_display_name': 'GO', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0055085', 'version': '0', 'dbname': 'GO', 'display_id': 'GO:0055085', 'description': 'transmembrane transport', 'linkage_types': '['IEA']', .
+'version': '0', 'info_type': 'DEPENDENT', 'primary_id': 'AAB68934.1', 'db_display_name': 'INSDC protein ID', 'description': 'None', 'dbname': 'protein_id', 'display_id': 'AAB68934.1', .
+'info_type': 'DEPENDENT', 'primary_id': 'CAA54923.1', 'db_display_name': 'INSDC protein ID', 'version': '0', 'description': 'None', 'dbname': 'protein_id', 'display_id': 'CAA54923.1', .
+'dbname': 'protein_id', 'display_id': 'DAA06790.1', 'description': 'None', 'version': '0', 'db_display_name': 'INSDC protein ID', 'info_type': 'DEPENDENT', 'primary_id': 'DAA06790.1', .
+'version': '0', 'primary_id': '4932.YHR096C', 'info_type': 'DEPENDENT', 'db_display_name': 'STRING', 'description': 'None', 'display_id': '4932.YHR096C', 'dbname': 'STRING', .
+'version': '0', 'db_display_name': 'UniParc', 'primary_id': 'UPI000012CFBA', 'info_type': 'CHECKSUM', 'display_id': 'UPI000012CFBA', 'dbname': 'UniParc', 'description': 'None', .
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+['BK006936.2', 'sgd', 'gene', 805351, 807105, '.', '+', '.', 'ID=gene:YBR299W;Name=MAL32;biotype=protein_coding;description=Maltase (alpha-D-glucosidase)%3B inducible protein involved in maltose catabolism%3B encoded in the MAL3 complex locus%3B functional in genomic reference strain S288C%3B hydrolyzes the disaccharides maltose%2C turanose%2C maltotriose%2C and sucrose [Source:SGD%3BAcc:S000000503];gene_id=YBR299W;logic_name=sgd\n', 'I']
+['BK006936.2', 'sgd', 'gene', 808600, 809097, '.', '-', '.', 'ID=gene:YBR300C;biotype=protein_coding;description=Dubious open reading frame%3B unlikely to encode a functional protein%2C based on available experimental and comparative sequence data%3B partially overlaps the verified gene YBR301W%3B YBR300C is not an essential gene [Source:SGD%3BAcc:S000000504];gene_id=YBR300C;logic_name=sgd\n', 'I']
+------------------------------------------------------------------------------------
+Length = 1494bp
+>BK006936.2:807106-808599 TPA_inf: Saccharomyces cerevisiae S288C chromosome II, complete sequence
+AATTAGTGCCGACTTTTTTTTAGCGCGTACTTTAACGAAATAACAGATGATTTTTCACATGATTTTTGTTAGATAAATTTTTTATATGTAAATGATGATAACGTAAAAGCACTGTTGATAATTTGTTTCACCATTATGGGTAAATGTGTTTTTCTACATGATCCTCGTTCATTATGATATTTAGCGTGTATATAAATGTGAATTCCAAATTATTAATGAAGCATAAGAAGCACTATCCTTTCTCTTCGGATGAAAACAAGGGAGAAGAAACCTGTGCTGGTATTAATGCTGGAATGTCTTGCTAAGAATCATACAAGGTGGTAGTTTTATTTAATAAAGAAAAGAAAAGGACTAGATATAAAAAGTGAAATGAATATAAGATAGCGTTAAGAGATGCCCACAGTACTTGACACATAATTTAGCGTTTTCTCGGGAAGCTCTGTGATTTTATGATTCAATAACACAGCGTAATTGATTTCGTGATGGTTCGATCCTATATGTAATCTCATGTAACACTCAGGCGAGTTACAAAATCGATTCAACATTGCCGGCTTATGCGTTTACGTCAAGTCTGAGCATGCCTACCCCCTTCCGAACCCGCCTTTTATTGTCTAGCCTTCAGATGAACTAAACCAATCATCTGTCCATAATCCATATGCTTTAGACAGTGTGATTAAGCAAAAGAAAATAAGCGCATAAGAATCTTGCTACTTCGGTAACTCTACAACATTAACACCCCACAATCAATATATAAAAGCCAACGAAGTGAAGAGAAGAGGTGGAATGACGCTCTTATCCTTTGAGAAATTTGACTACGAAAATCTGTGTCCCCTATGCCATTAGTTATTGAGCTATAACTATATATCAGAGAAGTGTAGTTATTCTTCAGCAACGGGCCTATAATCTGGATACGTATGATTACTTATCGCTGTAATAATTGTAAATTCCTGGAAGAAAAACACATGACCAGAATGATAGACATATTGAAACGGTGAATAAAAGGGAGAAAAAGGCTTAAAGGCTTTCTGTATTAGTAACACTAAGCCCTCTATCAATTTCATCCAAACAGAAAGACTGCAGGTACATCCATAGGATAGAAGTTCTGTATGTAAGCCGCCACTTTTTGTCTCCTTCACTTACCATATAATGAATAGAGAAACGTAGACCTAGGCGGCAACCGTTGCCTAACATACGAAGCGCTGGTGCTGTTCTCCGATTATTAGTATTACAAAAAAAATTATATAATACTTATTAAGATGTTGATTTATCAATTTCCGGTATAGTTTCCGGTATGGCCAGCTTGATCCAGTGGAAGTTCCGCTGTTTCAGAACTAGGGCTTCGTAGCACCTCGAATGCTCATTTATTCTTGTCAACATTTTTGCTGGCAGTGTATAAGACTGTAGGCACCTACAATATACGACTCCGGTATTCGATAAGTCTTTCACTTTCTATTTTAAGAAAAACAGAATCGACAATTTTCCCGTAGCAACCGT
+------------------------------------------------------------------------------------
+Cross References : YBR299W
+------------------------------------------------------------------------------------
+'version':'0', 'primary_id':'852602', 'info_type':'DEPENDENT', 'db_display_name':'NCBI gene (formerly Entrezgene)', 'description':'None', 'display_id':'852602', 'dbname':'EntrezGene', .
+'description':'Maltase (alpha-D-glucosidase), inducible protein involved in maltose catabolism; encoded in the MAL3 complex locus; functional in genomic reference strain S288C; hydrolyzes the disaccharides maltose, turanose, maltotriose, and sucrose', 'dbname':'SGD_GENE', 'display_id':'MAL32', 'synonyms':'['MAL3S', 'MALS']', 'info_type':'DIRECT', 'primary_id':'S000000503', 'db_display_name':'SGD gene name', 'version':'0', .
+'description':'Alpha-glucosidase MAL32', 'display_id':'P38158', 'dbname':'Uniprot/SWISSPROT', 'version':'1', 'primary_id':'P38158', 'info_type':'DEPENDENT', 'db_display_name':'UniProtKB/Swiss-Prot', .
+'version':'0', 'info_type':'DEPENDENT', 'primary_id':'NP_009858.3', 'db_display_name':'RefSeq peptide', 'description':'None', 'dbname':'RefSeq_peptide', 'display_id':'NP_009858.3', .
+'db_display_name':'RefSeq DNA', 'primary_id':'NM_001178647.3', 'info_type':'DEPENDENT', 'version':'0', 'display_id':'NM_001178647.3', 'dbname':'RefSeq_dna', 'description':'None', .
+'description':'maltose catabolic process', 'dbname':'GO', 'display_id':'GO:0000025', 'linkage_types':'['IGI']', 'info_type':'DEPENDENT', 'primary_id':'GO:0000025', 'db_display_name':'GO', 'version':'0', .
+'version':'0', 'db_display_name':'GO', 'info_type':'DEPENDENT', 'primary_id':'GO:0003824', 'linkage_types':'['IEA']', 'dbname':'GO', 'display_id':'GO:0003824', 'description':'catalytic activity', .
+'linkage_types':'['ISS']', 'display_id':'GO:0004558', 'dbname':'GO', 'description':'alpha-1,4-glucosidase activity', 'version':'0', 'db_display_name':'GO', 'primary_id':'GO:0004558', 'info_type':'DEPENDENT', .
+'db_display_name':'GO', 'info_type':'DEPENDENT', 'primary_id':'GO:0004575', 'version':'0', 'dbname':'GO', 'display_id':'GO:0004575', 'description':'sucrose alpha-glucosidase activity', 'linkage_types':'['IDA']', .
+'linkage_types':'['IEA']', 'dbname':'GO', 'display_id':'GO:0005975', 'description':'carbohydrate metabolic process', 'version':'0', 'db_display_name':'GO', 'info_type':'DEPENDENT', 'primary_id':'GO:0005975', .
+'description':'sucrose catabolic process', 'dbname':'GO', 'display_id':'GO:0005987', 'linkage_types':'['IGI']', 'info_type':'DEPENDENT', 'primary_id':'GO:0005987', 'db_display_name':'GO', 'version':'0', .
+'version':'0', 'primary_id':'GO:0032450', 'info_type':'DEPENDENT', 'db_display_name':'GO', 'linkage_types':'['IDA']', 'description':'maltose alpha-glucosidase activity', 'display_id':'GO:0032450', 'dbname':'GO', .
+'dbname':'GO', 'display_id':'GO:0033934', 'description':'glucan 1,4-alpha-maltotriohydrolase activity', 'linkage_types':'['IDA']', 'db_display_name':'GO', 'info_type':'DEPENDENT', 'primary_id':'GO:0033934', 'version':'0', .
+'dbname':'PDB', 'display_id':'1VAD', 'description':'None', 'db_display_name':'PDB', 'info_type':'DEPENDENT', 'primary_id':'1VAD', 'version':'0', .
+'description':'None', 'display_id':'CAA85264.1', 'dbname':'protein_id', 'primary_id':'CAA85264.1', 'info_type':'DEPENDENT', 'db_display_name':'INSDC protein ID', 'version':'0', .
+'description':'None', 'display_id':'DAA07415.1', 'dbname':'protein_id', 'primary_id':'DAA07415.1', 'info_type':'DEPENDENT', 'db_display_name':'INSDC protein ID', 'version':'0', .
+'description':'None', 'dbname':'STRING', 'display_id':'4932.YBR299W', 'version':'0', 'info_type':'DEPENDENT', 'primary_id':'4932.YBR299W', 'db_display_name':'STRING', .
+'display_id':'UPI000012EAEF', 'dbname':'UniParc', 'description':'None', 'db_display_name':'UniParc', 'primary_id':'UPI000012EAEF', 'info_type':'CHECKSUM', 'version':'0', .
+
+
+
+------------------------------------------------------------------------------------
+Cross References : YBR300C
+------------------------------------------------------------------------------------
+'primary_id': 'P38362', 'info_type': 'DEPENDENT', 'db_display_name': 'UniProtKB/Swiss-Prot', 'version': '1', 'description': 'Putative uncharacterized protein YBR300C', 'display_id': 'P38362', 'dbname': 'Uniprot/SWISSPROT', .
+'description': 'integral component of membrane', 'dbname': 'GO', 'display_id': 'GO:0016021', 'linkage_types': '['IEA']', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0016021', 'db_display_name': 'GO', 'version': '0', .
+'version': '0', 'info_type': 'DEPENDENT', 'primary_id': 'CAA85265.1', 'db_display_name': 'INSDC protein ID', 'description': 'None', 'dbname': 'protein_id', 'display_id': 'CAA85265.1', .
+'primary_id': '4932.YBR300C', 'info_type': 'DEPENDENT', 'db_display_name': 'STRING', 'version': '0', 'description': 'None', 'display_id': '4932.YBR300C', 'dbname': 'STRING', .
+'info_type': 'CHECKSUM', 'primary_id': 'UPI000013A286', 'db_display_name': 'UniParc', 'version': '0', 'description': 'None', 'dbname': 'UniParc', 'display_id': 'UPI000013A286', .
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+['BK006939.2', 'sgd', 'gene', 559454, 560365, '.', '+', '.', 'ID=gene:YER185W;Name=PUG1;biotype=protein_coding;description=Plasma membrane protein involved in protoprophyrin and heme transport%3B roles in the uptake of protoprophyrin IX and the efflux of heme%3B expression is induced under both low-heme and low-oxygen conditions%3B member of the fungal lipid-translocating exporter (LTE) family of proteins [Source:SGD%3BAcc:S000000987];gene_id=YER185W;logic_name=sgd\n', 'V']
+['BK006939.2', 'sgd', 'gene', 561705, 562625, '.', '-', '.', 'ID=gene:YER186C;biotype=protein_coding;description=Putative protein of unknown function [Source:SGD%3BAcc:S000000988];gene_id=YER186C;logic_name=sgd\n', 'V']
+------------------------------------------------------------------------------------
+Length = 1339bp
+>BK006939.2:560366-561704 TPA_inf: Saccharomyces cerevisiae S288C chromosome V, complete sequence
+ATAATATATATCAAATTTTGATTTCTATGTAGTGCAGCCAATCAATTTTAACTTCATTTAGAATAAAAATCTTTCCTCTTCTGCTTTGAAGCCATTAAAACGAAAGATCTAGGCGGTACTATTTCTCCATTCTCAGCCGTACAATCATGCACCGAAAAGGAAGGCAATGTATTGAATTTTTCGCCGAGAACAAAATATTTGTAAACACTCGTTAGATTCCGCATTGTTAAGTGGCATCACAAACACAATCAAGATTAAGAGAAAAGTAGCTCGTTGAGAAAGATTCTTGTACATATCGGGATACTTCTGAAGTCTAATAAAACATTCAAATAAAGACAGACTGGATAAAAGATTCCTGAACGTCAAAACTTATATCTTCTTGTCCCTTGGAATGTCTCTCTGCTCTTATATTGTTGCTGTTGAGTGGTCTCATGACAATAAAGTATGTCACTGAATTGAAGACTACTGAACCATGGCAGCTAATACAATCACGCCCATCCAGAAAAGTGTCGTGTGGCGAAAATTTTTGTTCACGTTGAACAGAGGGTACTGATTTCAAAGTGCTCTTAAGTCGTAATGACGGCCCTAATAATGATTTCCAGACCCTTTGGAAGGAGTTTCTTCTTTAAGTACTGCCCTCCCTGATCTATATTTGTAGGAAATTTTTAAAGTACCTAGCCTTTTTCTCAGTCACGGCTGTAGAGTGTACACAGAGCCTTTGAAGTTTGGTGCTTTACGAAATTAAAGCAGTCACCTATGTCATTTAGCTACAAAAAACTCGTCTAGAAGAACAGCACATCGGCCTCCTATATCGGTACTCATCACAGAATCAATGTATAGTATGTGTCAAGGAGAATGTATTAACGCCAAATTAAAGGCACACTAACATGTAATGAAGCTGGTGTTATATATTTTTTTTCAATTGACGTGAAACTCAGTGTCTTAGAATTATTTTTTAGTTCAAAGAGTACGGCTATTGAAGTGAGCCACAATGTCATTTAGCTTTATAAACACAAGAGTAAAAGTGCGCTTGTCTTCGCCTCAATGAATTAATGGAGCAGAAAATTTCTTAACGGTCAGCAATACTTGAAAATAATTTTAGCAGTTCAAACTTTCGTTGTTATCTTGATACTGAACTCTCCTTAGTATTCATATAAATGATTCTATTTAATAGTCCCCTCCGCAGGGTAATTTTAAGGCCTTCTTTTATTTCCAAAGGAATTAGTATATAGCATATAATATAATTTATCACCAAATCAACAGAAAATATCATAATAGCATTAACCCGCAAGAATTTCTTTAAATGAACACAGTTTTCTGCAGTGTTAAATAGAAATTT
+------------------------------------------------------------------------------------
+Cross References : YER185W
+------------------------------------------------------------------------------------
+'description':'None', 'display_id':'856934', 'dbname':'EntrezGene', 'primary_id':'856934', 'db_display_name':'NCBI gene (formerly Entrezgene)', 'info_type':'DEPENDENT', 'version':'0', .
+'description':'Plasma membrane protein involved in protoprophyrin and heme transport; roles in the uptake of protoprophyrin IX and the efflux of heme; expression is induced under both low-heme and low-oxygen conditions; member of the fungal lipid-translocating exporter (LTE) family of proteins', 'display_id':'PUG1', 'dbname':'SGD_GENE', 'info_type':'DIRECT', 'db_display_name':'SGD gene name', 'primary_id':'S000000987', 'version':'0', .
+'display_id':'P40100', 'dbname':'Uniprot/SWISSPROT', 'info_type':'DEPENDENT', 'primary_id':'P40100', 'db_display_name':'UniProtKB/Swiss-Prot', 'description':'Protoporphyrin uptake protein 1', 'version':'1', .
+'version':'0', 'description':'None', 'display_id':'NP_011112.3', 'dbname':'RefSeq_peptide', 'info_type':'DEPENDENT', 'primary_id':'NP_011112.3', 'db_display_name':'RefSeq peptide', .
+'version':'0', 'info_type':'DEPENDENT', 'db_display_name':'RefSeq DNA', 'primary_id':'NM_001179075.3', 'display_id':'NM_001179075.3', 'dbname':'RefSeq_dna', 'description':'None', .
+'version':'0', 'linkage_types':'['IBA']', 'description':'fungal-type vacuole', 'dbname':'GO', 'display_id':'GO:0000324', 'db_display_name':'GO', 'primary_id':'GO:0000324', 'info_type':'DEPENDENT', .
+'dbname':'GO', 'display_id':'GO:0005886', 'info_type':'DEPENDENT', 'db_display_name':'GO', 'primary_id':'GO:0005886', 'linkage_types':'['IDA']', 'description':'plasma membrane', 'version':'0', .
+'linkage_types':'['IEA']', 'description':'response to stress', 'dbname':'GO', 'display_id':'GO:0006950', 'info_type':'DEPENDENT', 'db_display_name':'GO', 'primary_id':'GO:0006950', 'version':'0', .
+'version':'0', 'display_id':'GO:0016021', 'dbname':'GO', 'info_type':'DEPENDENT', 'primary_id':'GO:0016021', 'db_display_name':'GO', 'linkage_types':'['IEA']', 'description':'integral component of membrane', .
+'db_display_name':'GO', 'primary_id':'GO:0035351', 'info_type':'DEPENDENT', 'dbname':'GO', 'display_id':'GO:0035351', 'description':'heme transmembrane transport', 'linkage_types':'['IMP']', 'version':'0', .
+'description':'None', 'primary_id':'AAB64712.1', 'db_display_name':'INSDC protein ID', 'info_type':'DEPENDENT', 'display_id':'AAB64712.1', 'dbname':'protein_id', 'version':'0', .
+'version':'0', 'description':'None', 'dbname':'protein_id', 'display_id':'DAA07848.1', 'info_type':'DEPENDENT', 'primary_id':'DAA07848.1', 'db_display_name':'INSDC protein ID', .
+'version':'0', 'description':'None', 'db_display_name':'STRING', 'primary_id':'4932.YER185W', 'info_type':'DEPENDENT', 'dbname':'STRING', 'display_id':'4932.YER185W', .
+'description':'None', 'primary_id':'UPI000013AA8F', 'db_display_name':'UniParc', 'info_type':'CHECKSUM', 'dbname':'UniParc', 'display_id':'UPI000013AA8F', 'version':'0', .
+
+
+
+------------------------------------------------------------------------------------
+Cross References : YER186C
+------------------------------------------------------------------------------------
+'version': '0', 'description': 'None', 'display_id': '856935', 'dbname': 'EntrezGene', 'info_type': 'DEPENDENT', 'db_display_name': 'NCBI gene (formerly Entrezgene)', 'primary_id': '856935', .
+'description': 'Uncharacterized protein YER186C', 'dbname': 'Uniprot/SWISSPROT', 'display_id': 'P40101', 'db_display_name': 'UniProtKB/Swiss-Prot', 'primary_id': 'P40101', 'info_type': 'DEPENDENT', 'version': '1', .
+'version': '0', 'db_display_name': 'RefSeq peptide', 'primary_id': 'NP_011113.3', 'info_type': 'DEPENDENT', 'dbname': 'RefSeq_peptide', 'display_id': 'NP_011113.3', 'description': 'None', .
+'info_type': 'DEPENDENT', 'db_display_name': 'RefSeq DNA', 'primary_id': 'NM_001179076.3', 'dbname': 'RefSeq_dna', 'display_id': 'NM_001179076.3', 'description': 'None', 'version': '0', .
+'info_type': 'DEPENDENT', 'db_display_name': 'INSDC protein ID', 'primary_id': 'AAB64713.1', 'dbname': 'protein_id', 'display_id': 'AAB64713.1', 'description': 'None', 'version': '0', .
+'dbname': 'protein_id', 'display_id': 'DAA07849.1', 'info_type': 'DEPENDENT', 'primary_id': 'DAA07849.1', 'db_display_name': 'INSDC protein ID', 'description': 'None', 'version': '0', .
+'version': '0', 'description': 'None', 'info_type': 'DEPENDENT', 'db_display_name': 'STRING', 'primary_id': '4932.YER186C', 'display_id': '4932.YER186C', 'dbname': 'STRING', .
+'description': 'None', 'dbname': 'UniParc', 'display_id': 'UPI000013AA91', 'primary_id': 'UPI000013AA91', 'db_display_name': 'UniParc', 'info_type': 'CHECKSUM', 'version': '0', .
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+['BK006944.2', 'sgd', 'gene', 14485, 15708, '.', '+', '.', 'ID=gene:YKL219W;Name=COS9;biotype=protein_coding;description=Endosomal protein involved in turnover of plasma membrane proteins%3B member of the DUP380 subfamily of conserved%2C often subtelomeric COS genes%3B required for the multivesicular vesicle body sorting pathway that internalizes plasma membrane proteins for degradation%3B Cos proteins provide ubiquitin in trans for nonubiquitinated cargo proteins [Source:SGD%3BAcc:S000001702];gene_id=YKL219W;logic_name=sgd\n', 'X']
+['BK006944.2', 'sgd', 'gene', 17359, 18339, '.', '-', '.', 'ID=gene:YKL218C;Name=SRY1;biotype=protein_coding;description=3-hydroxyaspartate dehydratase%3B deaminates L-threo-3-hydroxyaspartate to form oxaloacetate and ammonia%3B required in the presence of hydroxyaspartate%3B highly similar to mouse serine racemase (Srr) but has no serine racemase activity [Source:SGD%3BAcc:S000001701];gene_id=YKL218C;logic_name=sgd\n', 'X']
+------------------------------------------------------------------------------------
+Length = 1650bp
+>BK006944.2:15709-17358 TPA_inf: Saccharomyces cerevisiae S288C chromosome XI, complete sequence
+GAACAAGCATGCCTTTTCAATTTATAGATCGTGTAGTTTATTAGATGCGAATAGCCTAAACAAGGTCGCTTATTATTATTATTACAACTATTCTTTTTCCTATTCCCCTCTGGTTAACAAAAACCAGTATATTAACAGAAATAAATAATAATAACAAAAAAATATGAATATAAGAATAAATTGCAATAAATAGTAATATTTATAAAATATAAAAAGAAGAAATTTTTATTCTTTTTATATTTTATTATAAAATAGTTCAATTATTTATATTATTTAAATGTTGTAATTTATTATTAATAATTATATTTTATCAATATTTATACGATATAAAAATTTAAAAAAATTATAATATAGAAATAATAAATAATAATAATATGATAATAAAATAATATATAAATAAAAATGATAAGATTATATTAATTTATTTAATTTTCAAATTATTAAATAAATAATAACCTAATACTTACTTTTCCTAATATTATTAAAAATGGTTATTGTCAAACCCATTAACTGATTATATTATAATATTTCAATATTTAATTCACTTAATTTGTTGTTATAATAATTAATGAAATAGAGAAACTATAATCCAATTGATTGTGCAACAGTTTGATCTTCCAAATCATAAAAGAATATTGAGTGTTAGTTGGTACTGGTCATAACTATCCATTTTGAACATAACCATGTAACTCTTTTCCCGTCTACTGTTAATCAAGGGAACATGTTGAAAGTTATATCAATACATGTGTTGAGTATTTCACGCGAATTTATTGCTACAAAAGAGCACTAAGTAATACATCGTTAATTTCTGCGGTAGAACTGACCTGGTGACCTTGCTTGATGCTTTATTGTTTGTGGGATCTGTCACGTATATCGCCATATTTTTTTCCTACGGATATAATGTAAAACACTAATTTATCCTTCAGGGTTGCTCTTTAAAACTCAATTGTTGAATAACTTGGTATTCATATATGTGGCTGCTGCGAATATCTTGACACATATTATGATTATCAAAAAAAAGTGAAGAACTAAATTTAGGAGGATTTCTACAGTTTTGGTCTTGGTTAGGTAATAATTCCTTAAAATAGAGGCTTATCCTTTCCTGTGGACCATAAATATCTTCATGCAAGATCTCGATTGATTAGTAATAAGAGCAGACGATATTGTGTGTGGAAAAGAGAATTTTTTCTGCGTATAAAATAGGACATTATGACAGTTACCTTTAATTGAAGTAGAGATATGTTTTTTCAACTTAGAAGCTATGTCTTTACTGGGTGTAAGCCTAGGAACGCTCTTCTGTTTTAGTTCAAAATATGCAAAAGAAACTAATATACCAGTAATGCTCATAGTCACAGTCAGAAGTTATATTATTAGTTTGACATAAGCAGTATTCTTCCCTCTCACACACTATCATTCTGCCAAAAAATTTTCCCACATAAGGGTGTCAGTTCAGTGAAATATAATACTAGTAGAAAAATATGTAGAGTTATCAGAGTATAAATCAGCTAGAGGCTTTTTTTGCTGAACTCACTTCAAAATCTCAACCATGTTATTAATGTTAAGTCAAATGATATATGCCGTGTGAAAGTAGACAACTAAAGCTTTCCAATTCTTCACTATAAAACTGAACTCAAAATTCAAAAGTATACA
+------------------------------------------------------------------------------------
+Cross References : YKL219W
+------------------------------------------------------------------------------------
+'version':'0', 'description':'None', 'display_id':'853661', 'dbname':'EntrezGene', 'info_type':'DEPENDENT', 'primary_id':'853661', 'db_display_name':'NCBI gene (formerly Entrezgene)', .
+'version':'0', 'description':'Endosomal protein involved in turnover of plasma membrane proteins; member of the DUP380 subfamily of conserved, often subtelomeric COS genes; required for the multivesicular vesicle body sorting pathway that internalizes plasma membrane proteins for degradation; Cos proteins provide ubiquitin in trans for nonubiquitinated cargo proteins', 'display_id':'COS9', 'dbname':'SGD_GENE', 'primary_id':'S000001702', 'db_display_name':'SGD gene name', 'info_type':'DIRECT', .
+'description':'Protein COS9', 'db_display_name':'UniProtKB/Swiss-Prot', 'primary_id':'P36034', 'info_type':'DEPENDENT', 'display_id':'P36034', 'dbname':'Uniprot/SWISSPROT', 'version':'1', .
+'description':'None', 'primary_id':'NP_012703.1', 'db_display_name':'RefSeq peptide', 'info_type':'DEPENDENT', 'display_id':'NP_012703.1', 'dbname':'RefSeq_peptide', 'version':'0', .
+'info_type':'DEPENDENT', 'db_display_name':'RefSeq DNA', 'primary_id':'NM_001179784.1', 'display_id':'NM_001179784.1', 'dbname':'RefSeq_dna', 'description':'None', 'version':'0', .
+'version':'0', 'db_display_name':'GO', 'primary_id':'GO:0004872', 'info_type':'DEPENDENT', 'dbname':'GO', 'display_id':'GO:0004872', 'description':'receptor activity', 'linkage_types':'['IBA']', .
+'info_type':'DEPENDENT', 'primary_id':'GO:0005768', 'db_display_name':'GO', 'dbname':'GO', 'display_id':'GO:0005768', 'linkage_types':'['ISS']', 'description':'endosome', 'version':'0', .
+'version':'0', 'linkage_types':'['IBA']', 'description':'membrane', 'db_display_name':'GO', 'primary_id':'GO:0016020', 'info_type':'DEPENDENT', 'display_id':'GO:0016020', 'dbname':'GO', .
+'version':'0', 'linkage_types':'['IEA']', 'description':'integral component of membrane', 'info_type':'DEPENDENT', 'primary_id':'GO:0016021', 'db_display_name':'GO', 'display_id':'GO:0016021', 'dbname':'GO', .
+'version':'0', 'linkage_types':'['IBA']', 'description':'vesicle-mediated transport', 'display_id':'GO:0016192', 'dbname':'GO', 'info_type':'DEPENDENT', 'primary_id':'GO:0016192', 'db_display_name':'GO', .
+'version':'0', 'linkage_types':'['ISS']', 'description':'protein transport to vacuole involved in ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway', 'display_id':'GO:0043328', 'dbname':'GO', 'info_type':'DEPENDENT', 'primary_id':'GO:0043328', 'db_display_name':'GO', .
+'version':'0', 'dbname':'protein_id', 'display_id':'CAA53554.1', 'db_display_name':'INSDC protein ID', 'primary_id':'CAA53554.1', 'info_type':'DEPENDENT', 'description':'None', .
+'version':'0', 'display_id':'CAA82064.1', 'dbname':'protein_id', 'info_type':'DEPENDENT', 'primary_id':'CAA82064.1', 'db_display_name':'INSDC protein ID', 'description':'None', .
+'version':'0', 'display_id':'DAA08950.1', 'dbname':'protein_id', 'info_type':'DEPENDENT', 'primary_id':'DAA08950.1', 'db_display_name':'INSDC protein ID', 'description':'None', .
+'version':'0', 'display_id':'4932.YKL219W', 'dbname':'STRING', 'info_type':'DEPENDENT', 'primary_id':'4932.YKL219W', 'db_display_name':'STRING', 'description':'None', .
+'description':'None', 'display_id':'UPI0000127F30', 'dbname':'UniParc', 'info_type':'CHECKSUM', 'primary_id':'UPI0000127F30', 'db_display_name':'UniParc', 'version':'0', .
+
+
+
+------------------------------------------------------------------------------------
+Cross References : YKL218C
+------------------------------------------------------------------------------------
+'primary_id': '853662', 'info_type': 'DEPENDENT', 'db_display_name': 'NCBI gene (formerly Entrezgene)', 'version': '0', 'description': 'None', 'display_id': '853662', 'dbname': 'EntrezGene', .
+'dbname': 'SGD_GENE', 'display_id': 'SRY1', 'description': '3-hydroxyaspartate dehydratase; deaminates L-threo-3-hydroxyaspartate to form oxaloacetate and ammonia; required in the presence of hydroxyaspartate; highly similar to mouse serine racemase (Srr) but has no serine racemase activity', 'db_display_name': 'SGD gene name', 'info_type': 'DIRECT', 'primary_id': 'S000001701', 'version': '0', .
+'info_type': 'DEPENDENT', 'primary_id': 'P36007', 'db_display_name': 'UniProtKB/Swiss-Prot', 'version': '1', 'description': 'L-threo-3-hydroxyaspartate ammonia-lyase', 'dbname': 'Uniprot/SWISSPROT', 'display_id': 'P36007', .
+'version': '0', 'db_display_name': 'RefSeq peptide', 'info_type': 'DEPENDENT', 'primary_id': 'NP_012704.1', 'dbname': 'RefSeq_peptide', 'display_id': 'NP_012704.1', 'description': 'None', .
+'description': 'None', 'dbname': 'RefSeq_dna', 'display_id': 'NM_001179783.1', 'version': '0', 'info_type': 'DEPENDENT', 'primary_id': 'NM_001179783.1', 'db_display_name': 'RefSeq DNA', .
+'version': '0', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0006520', 'db_display_name': 'GO', 'linkage_types': '['IEA']', 'description': 'cellular amino acid metabolic process', 'dbname': 'GO', 'display_id': 'GO:0006520', .
+'linkage_types': '['IEA']', 'description': 'pyridoxal phosphate binding', 'display_id': 'GO:0030170', 'dbname': 'GO', 'version': '0', 'primary_id': 'GO:0030170', 'info_type': 'DEPENDENT', 'db_display_name': 'GO', .
+'display_id': 'GO:0030848', 'dbname': 'GO', 'description': 'threo-3-hydroxyaspartate ammonia-lyase activity', 'linkage_types': '['IDA']', 'db_display_name': 'GO', 'primary_id': 'GO:0030848', 'info_type': 'DEPENDENT', 'version': '0', .
+'version': '0', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0042219', 'db_display_name': 'GO', 'linkage_types': '['IDA']', 'description': 'cellular modified amino acid catabolic process', 'dbname': 'GO', 'display_id': 'GO:0042219', .
+'db_display_name': 'INSDC protein ID', 'info_type': 'DEPENDENT', 'primary_id': 'CAA53555.1', 'version': '0', 'dbname': 'protein_id', 'display_id': 'CAA53555.1', 'description': 'None', .
+'version': '0', 'db_display_name': 'INSDC protein ID', 'info_type': 'DEPENDENT', 'primary_id': 'CAA82063.1', 'dbname': 'protein_id', 'display_id': 'CAA82063.1', 'description': 'None', .
+'description': 'None', 'dbname': 'protein_id', 'display_id': 'DAA08951.1', 'info_type': 'DEPENDENT', 'primary_id': 'DAA08951.1', 'db_display_name': 'INSDC protein ID', 'version': '0', .
+'display_id': '4932.YKL218C', 'dbname': 'STRING', 'description': 'None', 'version': '0', 'db_display_name': 'STRING', 'primary_id': '4932.YKL218C', 'info_type': 'DEPENDENT', .
+'info_type': 'CHECKSUM', 'primary_id': 'UPI000013B76F', 'db_display_name': 'UniParc', 'version': '0', 'description': 'None', 'dbname': 'UniParc', 'display_id': 'UPI000013B76F', .
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+['BK006948.2', 'sgd', 'gene', 692475, 697334, '.', '+', '.', 'ID=gene:YOR191W;Name=ULS1;biotype=protein_coding;description=Swi2/Snf2-related translocase%2C SUMO-Targeted Ubiquitin Ligase (STUbL)%3B required for maintenance of NHEJ inhibition at telomeres%3B functions at telomeres to translocate and ubiquitinylate poly-sumoylated Rap1p for proteosomal degradation%3B plays role in antagonizing silencing during mating-type switching%3B only known STUbL with a translocase activity%3B contains RING finger domain%3B relocalizes from nucleus to cytoplasm upon DNA replication stress [Source:SGD%3BAcc:S000005717];gene_id=YOR191W;logic_name=sgd\n', 'X']
+['BK006948.2', 'sgd', 'gene', 698768, 700567, '.', '-', '.', 'ID=gene:YOR192C;Name=THI72;biotype=protein_coding;description=Transporter of thiamine or related compound%3B contributes to uptake of 5-aminoimidazole-4-carboxamide-1-beta-D-ribofuranoside (acadesine)%3B shares sequence similarity with Thi7p [Source:SGD%3BAcc:S000005718];gene_id=YOR192C;logic_name=sgd\n', 'X']
+------------------------------------------------------------------------------------
+Length = 1433bp
+>BK006948.2:697335-698767 TPA_inf: Saccharomyces cerevisiae S288C chromosome XV, complete sequence
+AGAACTTGGTGAATTTTGAAGCATTATTGCGATACACATATGTATATGTTGATAATTGGTGGCTAAGCTTCTAGTTTGTAGGCTTAAGTAACTTCACTCGTTGGCACTTACGAGCTTGGCATTTAATGGAACAGAAAATAAGCCGTAAATCGGCCCTACTTTAAGTATAAGAAATATGCGAAATTTGATATGATCGTTTGAATTACTTTTTGAAAAAGAAAATACCATTAGTAACATACAATATAAGAAGCTCGTCTCCTGGATTTGGAAATCCACAAAAGATTATCAACAATGCCACGAATAACATAATTGCTTCCCCCTCCTGTTAATTGCTTTAACTCATTATTGCATCGTTAACAGTTGTTACTAAATTTGATTTTTGTTTCTCATCATATATGTAATCTTCAAACGCCAGTATAATTATACGCTCGCAACAGCTACCATACATTAATGAACCGATGAAAATATCCCGTTTGATGATAACTGGCAATTAAATGACAGTATTAATTAATAATCAAAGCTGATCTTATATTCCTATAAAAGAGAAGCGTATAAAACACACGTGGATTGGGGGTGCTTTATACGTAAACTGTGATTTCAGTAATTTTCGCTGTAAGATCAAAGTAAAGACACATTCCCTTATATGTAAAGTTCAAATTCATTGTTCCACTAATAGACCGTCAACTTTTCTTTTGGATTTTCAGCCCGAACAGGTTGCTTATTATTAACTTCCTTACAACAAGGTACAGTCAGTGCATTATATAGATCTATACAACCATGTGCCTTTGTGTTTTCTAAGGCTATACTGAAAATAAATTGGTAATTTATAATTTCTATCTTCACGCGCTTTCTCACTAACAAGACTTGACCTCTCAAATAAGTGGCGCAGATGCTCTAGAAAAGGTTTCTTATCAAATAAGTTTTGCTCTTTAATCGCACAATGCAATGCAAGTTATTTTTTTTTTTTTGATTTAATGACTTTCGATTTCCTCTCATAGGCAACCGGTACTTATCATAAGTACGTAATAAGAAAAGTATGTCGCAGGACGTCATAAGCTCAGACTTGAACAAAAGAGTAACAAAATCGCCTCCACCTAATTTTCAGCCCTACTAGAGCCTGATAGGATATCGGCACTGAAGCTGATAAGAGAATCAATGAAAATATCATCCTCAACAGAAATACTGAAAAGAAGCGGTAGTTTTTTTTTCTTGTTACAATTATCAGCCAAACAAAAACAGTGATCTGAATCGTCAATCAAACATTAGTGGAAGAATGAAATAATCGAAATGACCTCTATATCCTGTACGACCAACAAGCTTAATAGTAGTGTTTCCTGGGACTAAAGAGTGTGTTTAATTATCTCGAATTTTAATACTAGCGAAAGATCTTGAATGAACACTAAGTATGATCATTTTATTAGGTTTTTTGCTCA
+------------------------------------------------------------------------------------
+Cross References : YOR191W
+------------------------------------------------------------------------------------
+'version':'0', 'description':'Uls1p', 'synonyms':'['DIS1', 'RIS1', 'TID4']', 'info_type':'DEPENDENT', 'primary_id':'854363', 'db_display_name':'NCBI gene (formerly Entrezgene)', 'display_id':'ULS1', 'dbname':'EntrezGene', .
+'db_display_name':'SGD gene name', 'primary_id':'S000005717', 'synonyms':'['DIS1', 'RIS1', 'TID4']', 'info_type':'DIRECT', 'dbname':'SGD_GENE', 'display_id':'ULS1', 'description':'RING finger protein involved in proteolytic control of sumoylated substrates; interacts with SUMO (Smt3p); member of the SWI/SNF family of DNA-dependent ATPases; plays a role in antagonizing silencing during mating-type switching', 'version':'0', .
+'version':'1', 'description':'ATP-dependent helicase ULS1', 'display_id':'Q08562', 'dbname':'Uniprot/SWISSPROT', 'info_type':'DEPENDENT', 'primary_id':'Q08562', 'db_display_name':'UniProtKB/Swiss-Prot', .
+'version':'0', 'display_id':'NP_014834.1', 'dbname':'RefSeq_peptide', 'info_type':'DEPENDENT', 'primary_id':'NP_014834.1', 'db_display_name':'RefSeq peptide', 'description':'None', .
+'version':'0', 'description':'None', 'info_type':'DEPENDENT', 'primary_id':'NM_001183610.1', 'db_display_name':'RefSeq DNA', 'dbname':'RefSeq_dna', 'display_id':'NM_001183610.1', .
+'version':'0', 'description':'condensed nuclear chromosome kinetochore', 'linkage_types':'['IDA']', 'info_type':'DEPENDENT', 'primary_id':'GO:0000778', 'db_display_name':'GO', 'dbname':'GO', 'display_id':'GO:0000778', .
+'version':'0', 'description':'helicase activity', 'linkage_types':'['IEA']', 'info_type':'DEPENDENT', 'primary_id':'GO:0004386', 'db_display_name':'GO', 'dbname':'GO', 'display_id':'GO:0004386', .
+'version':'0', 'db_display_name':'GO', 'primary_id':'GO:0005524', 'info_type':'DEPENDENT', 'display_id':'GO:0005524', 'dbname':'GO', 'description':'ATP binding', 'linkage_types':'['IEA']', .
+'version':'0', 'display_id':'GO:0005634', 'dbname':'GO', 'primary_id':'GO:0005634', 'db_display_name':'GO', 'info_type':'DEPENDENT', 'description':'nucleus', 'linkage_types':'['IDA']', .
+'info_type':'DEPENDENT', 'primary_id':'GO:0005730', 'db_display_name':'GO', 'display_id':'GO:0005730', 'dbname':'GO', 'linkage_types':'['IDA']', 'description':'nucleolus', 'version':'0', .
+'description':'chromatin assembly or disassembly', 'linkage_types':'['IMP']', 'db_display_name':'GO', 'primary_id':'GO:0006333', 'info_type':'DEPENDENT', 'dbname':'GO', 'display_id':'GO:0006333', 'version':'0', .
+'version':'0', 'display_id':'GO:0006351', 'dbname':'GO', 'primary_id':'GO:0006351', 'db_display_name':'GO', 'info_type':'DEPENDENT', 'linkage_types':'['IEA']', 'description':'transcription, DNA-templated', .
+'version':'0', 'db_display_name':'GO', 'primary_id':'GO:0006355', 'info_type':'DEPENDENT', 'dbname':'GO', 'display_id':'GO:0006355', 'linkage_types':'['IEA']', 'description':'regulation of transcription, DNA-templated', .
+'version':'0', 'description':'mating type switching', 'linkage_types':'['IMP']', 'db_display_name':'GO', 'primary_id':'GO:0007533', 'info_type':'DEPENDENT', 'dbname':'GO', 'display_id':'GO:0007533', .
+'primary_id':'GO:0008094', 'db_display_name':'GO', 'info_type':'DEPENDENT', 'dbname':'GO', 'display_id':'GO:0008094', 'linkage_types':'['ISS']', 'description':'DNA-dependent ATPase activity', 'version':'0', .
+'version':'0', 'linkage_types':'['IPI']', 'description':'SUMO binding', 'display_id':'GO:0032183', 'dbname':'GO', 'primary_id':'GO:0032183', 'db_display_name':'GO', 'info_type':'DEPENDENT', .
+'info_type':'DEPENDENT', 'db_display_name':'GO', 'primary_id':'GO:0046872', 'display_id':'GO:0046872', 'dbname':'GO', 'description':'metal ion binding', 'linkage_types':'['IEA']', 'version':'0', .
+'version':'0', 'info_type':'DEPENDENT', 'primary_id':'GO:2001033', 'db_display_name':'GO', 'display_id':'GO:2001033', 'dbname':'GO', 'description':'negative regulation of double-strand break repair via nonhomologous end joining', 'linkage_types':'['IMP']', .
+'description':'None', 'db_display_name':'INSDC protein ID', 'primary_id':'CAA99400.1', 'info_type':'DEPENDENT', 'dbname':'protein_id', 'display_id':'CAA99400.1', 'version':'0', .
+'description':'None', 'display_id':'DAA10963.1', 'dbname':'protein_id', 'info_type':'DEPENDENT', 'db_display_name':'INSDC protein ID', 'primary_id':'DAA10963.1', 'version':'0', .
+'description':'None', 'info_type':'DEPENDENT', 'primary_id':'4932.YOR191W', 'db_display_name':'STRING', 'display_id':'4932.YOR191W', 'dbname':'STRING', 'version':'0', .
+'description':'None', 'display_id':'UPI000006BC7F', 'dbname':'UniParc', 'db_display_name':'UniParc', 'primary_id':'UPI000006BC7F', 'info_type':'CHECKSUM', 'version':'0', .
+
+
+
+------------------------------------------------------------------------------------
+Cross References : YOR192C
+------------------------------------------------------------------------------------
+'version': '0', 'description': 'None', 'dbname': 'EntrezGene', 'display_id': '854364', 'info_type': 'DEPENDENT', 'primary_id': '854364', 'db_display_name': 'NCBI gene (formerly Entrezgene)', .
+'version': '0', 'description': 'Transporter of thiamine or related compound; contributes to uptake of 5-aminoimidazole-4-carboxamide-1-beta-D-ribofuranoside (acadesine); shares sequence similarity with Thi7p', 'db_display_name': 'SGD gene name', 'primary_id': 'S000005718', 'info_type': 'DIRECT', 'dbname': 'SGD_GENE', 'display_id': 'THI72', .
+'version': '1', 'dbname': 'Uniprot/SWISSPROT', 'display_id': 'Q08579', 'db_display_name': 'UniProtKB/Swiss-Prot', 'primary_id': 'Q08579', 'info_type': 'DEPENDENT', 'description': 'Thiamine transporter THI72', .
+'version': '0', 'description': 'None', 'display_id': 'NP_014835.3', 'dbname': 'RefSeq_peptide', 'db_display_name': 'RefSeq peptide', 'primary_id': 'NP_014835.3', 'info_type': 'DEPENDENT', .
+'description': 'None', 'display_id': 'NM_001183611.3', 'dbname': 'RefSeq_dna', 'primary_id': 'NM_001183611.3', 'db_display_name': 'RefSeq DNA', 'info_type': 'DEPENDENT', 'version': '0', .
+'display_id': 'GO:0005215', 'dbname': 'GO', 'db_display_name': 'GO', 'primary_id': 'GO:0005215', 'info_type': 'DEPENDENT', 'linkage_types': '['ISS']', 'description': 'transporter activity', 'version': '0', .
+'linkage_types': '['IBA']', 'description': 'plasma membrane', 'dbname': 'GO', 'display_id': 'GO:0005886', 'info_type': 'DEPENDENT', 'db_display_name': 'GO', 'primary_id': 'GO:0005886', 'version': '0', .
+'info_type': 'DEPENDENT', 'primary_id': 'GO:0015205', 'db_display_name': 'GO', 'dbname': 'GO', 'display_id': 'GO:0015205', 'linkage_types': '['IBA']', 'description': 'nucleobase transmembrane transporter activity', 'version': '0', .
+'info_type': 'DEPENDENT', 'db_display_name': 'GO', 'primary_id': 'GO:0015851', 'display_id': 'GO:0015851', 'dbname': 'GO', 'linkage_types': '['IBA']', 'description': 'nucleobase transport', 'version': '0', .
+'version': '0', 'primary_id': 'GO:0015888', 'db_display_name': 'GO', 'info_type': 'DEPENDENT', 'display_id': 'GO:0015888', 'dbname': 'GO', 'description': 'thiamine transport', 'linkage_types': '['IGI']', .
+'description': 'membrane', 'linkage_types': '['ISS', 'IEA']', 'info_type': 'DEPENDENT', 'db_display_name': 'GO', 'primary_id': 'GO:0016020', 'display_id': 'GO:0016020', 'dbname': 'GO', 'version': '0', .
+'version': '0', 'linkage_types': '['IEA']', 'description': 'integral component of membrane', 'display_id': 'GO:0016021', 'dbname': 'GO', 'info_type': 'DEPENDENT', 'db_display_name': 'GO', 'primary_id': 'GO:0016021', .
+'linkage_types': '['IEA']', 'description': 'transmembrane transporter activity', 'info_type': 'DEPENDENT', 'primary_id': 'GO:0022857', 'db_display_name': 'GO', 'display_id': 'GO:0022857', 'dbname': 'GO', 'version': '0', .
+'linkage_types': '['IEA']', 'description': 'transmembrane transport', 'info_type': 'DEPENDENT', 'db_display_name': 'GO', 'primary_id': 'GO:0055085', 'dbname': 'GO', 'display_id': 'GO:0055085', 'version': '0', .
+'db_display_name': 'GO', 'primary_id': 'GO:1903088', 'info_type': 'DEPENDENT', 'dbname': 'GO', 'display_id': 'GO:1903088', 'description': '5-amino-1-ribofuranosylimidazole-4-carboxamide transmembrane transport', 'linkage_types': '['IGI']', 'version': '0', .
+'version': '0', 'description': '5-amino-1-ribofuranosylimidazole-4-carboxamide transmembrane transporter activity', 'linkage_types': '['IGI']', 'dbname': 'GO', 'display_id': 'GO:1903089', 'info_type': 'DEPENDENT', 'db_display_name': 'GO', 'primary_id': 'GO:1903089', .
+'description': 'None', 'dbname': 'protein_id', 'display_id': 'CAA99401.1', 'db_display_name': 'INSDC protein ID', 'primary_id': 'CAA99401.1', 'info_type': 'DEPENDENT', 'version': '0', .
+'version': '0', 'primary_id': 'DAA10964.1', 'db_display_name': 'INSDC protein ID', 'info_type': 'DEPENDENT', 'display_id': 'DAA10964.1', 'dbname': 'protein_id', 'description': 'None', .
+'version': '0', 'description': 'None', 'info_type': 'DEPENDENT', 'primary_id': '4932.YOR192C', 'db_display_name': 'STRING', 'display_id': '4932.YOR192C', 'dbname': 'STRING', .
+'version': '0', 'description': 'None', 'primary_id': 'UPI0000136EAB', 'db_display_name': 'UniParc', 'info_type': 'CHECKSUM', 'display_id': 'UPI0000136EAB', 'dbname': 'UniParc', .
+
+
+
+Number of intergenic intervals: 6
