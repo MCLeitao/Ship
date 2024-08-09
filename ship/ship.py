@@ -8,6 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import json
 
+
 # Security key to use the database NCBI
 
 if (not os.environ.get('PYTHONHTTPSVERIFY', '') and
@@ -15,17 +16,17 @@ if (not os.environ.get('PYTHONHTTPSVERIFY', '') and
     ssl._create_default_https_context = ssl._create_unverified_context
 
 
-# ---------------------------------------------------------------------------------
-#                   Define the Input and Output Files
-# ---------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------
+#                                              Define the Input and Output Files
+# ----------------------------------------------------------------------------------------------------------------------
 
 def define_files():
     print('=-' * 15)
-    print('{:^30}'.format('Welcome on Board Sailor !'))
+    print('{:^30}'.format('Welcome on Board Sailor!'))
     print('-=' * 15)
     # Parameters to access the NCBI service:
-    Entrez.tool = 'SHIP'  # Tool that is accessing
-    Entrez.email = ' '  # Tool user email - Always tell NCBI who you are.
+    Entrez.tool = 'SHIP'  # The Tool that is accessing
+    Entrez.email = ' '  # The Tool user email - Always tell NCBI who you are.
     while True:
         Entrez.email = str(input('Enter your email to access NCBI: '))
         if '@' not in Entrez.email:
@@ -35,8 +36,8 @@ def define_files():
 
     # GFF file entry for analysis
     while True:
-        name_file_read = str(input('Enter the path and file name: ')).strip()
-        if name_file_read[-3:] != 'gff' and name_file_read[-4:] != 'gff3':  # Checks whether the input file is in gff
+        name_file_read = str(input('Enter file name <include the path>: ')).strip()
+        if name_file_read[-3:] != 'gff' and name_file_read[-4:] != 'gff3':  # Check whether the input file is in .gff
             print('Inform file in gff format')
         else:
             try:
@@ -56,9 +57,9 @@ def define_files():
         return file_r, name_file_read, int(interval)
 
 
-# ---------------------------------------------------------------------------------
-#                    PARSE of the GFF File
-# ---------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------
+#                                                    PARSE of the GFF File
+# ----------------------------------------------------------------------------------------------------------------------
 
 def parse_gff(file_r):
     print('--' * 15)
@@ -70,26 +71,26 @@ def parse_gff(file_r):
     [3] Filtering out convergent, divergent and tandem genes.''')
     print('--' * 15)
 
-    file_format = 1  # 1 indicates the standard model and 2 indicates Ensembl model
+    file_format = 1  # "1" indicates the .gff Standard model and "2" indicates Ensembl model
     cont_line = 0
     result = list()
     cont_chromosome = 0
-    analyzed_type = {}  # Stores the types to be analyzed
-    unanalyzed_type = {}  # Stores the types that will not be analyzed
+    analyzed_type = {}  # Stores the types to be analyzed (features.json)
+    unanalyzed_type = {}  # Stores the types that will not be analyzed (features.json)
 
     with open('features.json', 'r') as f:
         data_json = json.load(f)
     print(f'features : {list(data_json.keys())}')
     print('--' * 15)
 
-    #for line in file_r:
-    lista_arquivo = file_r.readlines() # Transforma o arquivo em uma Lsita
+    # for line in file_r:
+    lista_arquivo = file_r.readlines()  # Transform the file into a List
     chrom_anterior = ''
-    for pos_i in range (0,len(lista_arquivo)):
+    for pos_i in range(0, len(lista_arquivo)):
         line = lista_arquivo[pos_i]
-        li = line.split('\t')  # Transforms a TAB-separated line into a LIST for easy manipulation
+        li = line.split('\t')  # Transform a TAB-separated line into a LIST for easy manipulation
 
-        if pos_i + 1 < len(lista_arquivo): # pega a proxima linha da lista
+        if pos_i + 1 < len(lista_arquivo):  # Get the next line in the list
             lp = lista_arquivo[pos_i+1].split('\t')
 
         if 'Alias=' in line:  # Identifying the chromosome and renaming column 0
@@ -138,8 +139,8 @@ def parse_gff(file_r):
                     chrom_anterior = id_chromosome
 
 
-                li[3] = int(li[3])  # Save the start and end columns of the genes as integers
-                li[4] = int(li[4])  # To perform the calculations
+                li[3] = int(li[3])   # Saves the starting and ending columns of the genes as integers
+                li[4] = int(li[4])   # To perform the calculations
                 #  Insert line
                 result.append(li[:])
                 li.clear()
@@ -162,16 +163,16 @@ def parse_gff(file_r):
     return result
 
 
-# ---------------------------------------------------------------------------------
-#                    Remove Total Overlap
-# ---------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------
+#                                            Remove Total Overlapping Annotations
+# ----------------------------------------------------------------------------------------------------------------------
 
 def remove_overlap(result):
     def fucKey(e):
         return e[0], e[3]
 
-    result.sort(key=fucKey)  # Sort genes by chromosome number and Start
-    result_without_overlap = []  # Looking for and removing total overlap
+    result.sort(key=fucKey)  # Sort annotations by chromosome number and Start
+    result_without_overlap = []  # Looking for and removing total overlapping annotations
     cl = 0  # Current line
     current_chromosome = result[cl][0]
 
@@ -195,9 +196,9 @@ def remove_overlap(result):
     return result_without_overlap, amount_overlap
 
 
-# ---------------------------------------------------------------------------------
-#                    Assemble Table
-# ---------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------
+#                                                     Assemble Table
+# ----------------------------------------------------------------------------------------------------------------------
 
 def assemble_table(non_overlap_list, interval, amount_genes, amount_overlap):
     import collections as coll
@@ -215,7 +216,7 @@ def assemble_table(non_overlap_list, interval, amount_genes, amount_overlap):
                 l1 = l2
                 l2 = l1 + 1
                 amount_chromosome += 1
-            # Calculates the difference between the start of the second gene and the end of the first gene
+            # Calculates the difference between the start of the downstream gene and the end of the upstream gene
 
             difference = non_overlap_list[l2][3] - non_overlap_list[l1][4]
             if difference > 0:  # Checks for gaps between genes
@@ -243,7 +244,7 @@ def assemble_table(non_overlap_list, interval, amount_genes, amount_overlap):
                         end_value_description = start_value_description + interval - 1
                         description = f'{float(start_value_description):,.0f}-{float(end_value_description):,.0f} bp'
                         if (non_overlap_list[l1][6] == '-' and non_overlap_list[l2][6] == '-') or (
-                                non_overlap_list[l1][6] == '+' and non_overlap_list[l2][6] == '+'):  # if it's tandem
+                                non_overlap_list[l1][6] == '+' and non_overlap_list[l2][6] == '+'):  # If it's tandem
                             ranges_dictionary[key] = {'description': description, 'amount_tandem': 1,
                                                       'amount_divergent': 0, 'amount_convergent': 0}
                         if non_overlap_list[l1][6] == '-' and non_overlap_list[l2][6] == '+':  # If it's divergent
@@ -283,17 +284,6 @@ def assemble_table(non_overlap_list, interval, amount_genes, amount_overlap):
                 contConverge += value
         print()
 
-    '''
-    print()
-    print(f'Quantity of Chromosomes = {amount_chromosome}')
-    print(f'Number of genes located = {amount_genes}')
-    print(f'Total intergenic intervals = {contDiverge + contConverge + contTandem}')
-    print(f'Total Intervals flanked by Tandem genes     = {contTandem}')
-    print(f'Total Intervals flanked by Divergent genes  = {contDiverge}')
-    print(f'Total Intervals flanked by Convergent genes = {contConverge}')
-    print(f'Number of complete overlaps between genes   = {amount_overlap}\n')
-    print()
-    '''
     print(f'''
     Quantity of Chromosomes = {amount_chromosome} 
     Number of genes located = {amount_genes}
@@ -302,22 +292,22 @@ def assemble_table(non_overlap_list, interval, amount_genes, amount_overlap):
     Total Intervals flanked by Divergent genes  = {contDiverge}
     Total Intervals flanked by Convergent genes = {contConverge}
     Number of complete overlaps between genes   = {amount_overlap}
-    
     ''')
+
     return ordered_dictionary
 
 
-# ----------------------------------------------------
-#     Plotagem dos dados
-# ---------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------
+#                                                      Data Charting
+# ----------------------------------------------------------------------------------------------------------------------
 def plot_genes(dicto_genes, interval_plot, file_name):
     soma_tamdem = soma_divergente = soma_convergente = 0
     dict_final = dict()
     labels = list()
     list_results = list()
-    cont = 0  # conta o nivel a ser plotado
-    # monta um novo dicionario incluindo somente os itens menores que o interval_plot
-    # e inclui um novo item com a somatoria dos itens maiores que o interval_plot
+    cont = 0  # It counts the level to be plotted
+    # Creates a new dictionary including only items smaller than interval_plot
+    # and includes a new item with the sum of items greater than the interval_plot
     for k, v in dicto_genes.items():
         if interval_plot <= cont:
             for ki, vi in v.items():
@@ -340,7 +330,7 @@ def plot_genes(dicto_genes, interval_plot, file_name):
     dict_final[interval_plot] = {'description': descricao, 'amount_tandem': soma_tamdem,
                                  'amount_divergent': soma_divergente, 'amount_convergent': soma_convergente}
 
-    # aqui começa a plotagem
+    # Here begins the charting
     list_dados = dict_final.values()
     results = list()
     # dados = np.array(list(dados.values()))
@@ -361,7 +351,7 @@ def plot_genes(dicto_genes, interval_plot, file_name):
 
     category_colors = plt.get_cmap('RdYlBu')(np.linspace(0.20, 0.80, data.shape[1]))
     # category_colors = ['r', 'g', 'b']
-    # Cria  a figura e o Axes para a plotagem
+    # Creates the figure and Axes for plotting
     # fig, ax = plt.subplots(figsize=(15,10))
     fig, ax = plt.subplots(ncols=3, nrows=1, figsize=(18, 6))
     lim_x = np.sum(data, axis=1).max() / 2 + 1000
@@ -370,12 +360,12 @@ def plot_genes(dicto_genes, interval_plot, file_name):
     MEDIUM_SIZE = 15
     BIGGER_SIZE = 25
 
-    plt.rc('font', size=MEDIUM_SIZE)  # controls default text sizes
-    plt.rc('axes', titlesize=MEDIUM_SIZE)  # fontsize of the axes title
-    plt.rc('axes', labelsize=MEDIUM_SIZE)  # fontsize of the x and y labels
-    plt.rc('xtick', labelsize=SMALL_SIZE)  # fontsize of the tick labels (Numbers y)
-    plt.rc('ytick', labelsize=SMALL_SIZE)  # fontsize of the tick labels (Numbers y)
-    plt.rc('legend', fontsize=BIGGER_SIZE)  # legend fontsize
+    plt.rc('font', size=MEDIUM_SIZE)        # controls default text sizes
+    plt.rc('axes', titlesize=MEDIUM_SIZE)   # font size of the axes title
+    plt.rc('axes', labelsize=MEDIUM_SIZE)   # font size of the x and y labels
+    plt.rc('xtick', labelsize=SMALL_SIZE)   # font size of the tick labels (Numbers y)
+    plt.rc('ytick', labelsize=SMALL_SIZE)   # font size of the tick labels (Numbers y)
+    plt.rc('legend', fontsize=BIGGER_SIZE)  # font size legend
     plt.rc('figure', titlesize=BIGGER_SIZE)
     colors_axes = ['royalblue', 'forestgreen', 'crimson']
     for i, (colname, color) in enumerate(zip(category_names, category_colors)):
@@ -406,9 +396,9 @@ def plot_genes(dicto_genes, interval_plot, file_name):
     # plt.close('all')  # all open plots are correctly closed after each run
 
 
-# ---------------------------------------------------------------------------------
-#                    Generate the FASTA of the Selected Intervals
-# ---------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------
+#                                             Defining the pGSHs characteristics
+# ----------------------------------------------------------------------------------------------------------------------
 
 def fasta(non_overlap_list, file_name):
     regulatory_list = []
@@ -425,10 +415,6 @@ def fasta(non_overlap_list, file_name):
         file_w = open(name_file_write, 'w')
     except Exception as error:
         print(error)
-
-    print('--' * 15)
-    print('Obtaining the FASTA Sequence')
-    print('--' * 15)
 
     # Specification of the type of genes that flank the intergenic region:
     first_gene = ''
@@ -475,32 +461,40 @@ def fasta(non_overlap_list, file_name):
                 break
         except Exception as error:
             print(error)
-            print('Just type numbers!')
+            print('Just type numbers.')
 
-    # -------------------------------------------------------------------
-    #    Define whether California data analysis will be performed
-    # -------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------
+#                                            External Database analysis
+# ----------------------------------------------------------------------------------------------------------------------
 
+    # Define whether data analysis will be performed in UCSC Genome Browser Database
     while True:
-        california_analysis = input('Do you want to perform Data Base California analysis ? (Y/N) ').strip().upper()[0]
+        california_analysis = input('Do you want to perform analysis on the UCSC Database? (Y/N) ').strip().upper()[0]
         if california_analysis not in ("Y", "N"):
             print('Choose Y or N')
         else:
             break
 
-    # -------------------------------------------------------------------
-    #    Define whether regulation data analysis will be performed
-    # -------------------------------------------------------------------
-
+    # Define whether regulation data analysis will be performed
     while True:
-        choice_Cross_References = input('Do you want to perform Cross References? (Y/N) ').strip().upper()[0]
-        ## verficar se foi digitado Y ou N
+        while True:
+            choice_Cross_References = input('Do you want to perform Cross References? (Y/N) ').strip().upper()[0]
+            if choice_Cross_References not in ("Y", "N"):
+                print('Choose Y or N')
+            else:
+                break
 
-        choice_regulatory = input('Do you want to perform regulatory analysis? (Y/N) ').strip().upper()[0]
+        while True:
+            choice_regulatory = input('Do you want to perform regulatory analysis? (Y/N) ').strip().upper()[0]
+            if choice_regulatory not in ("Y", "N"):
+                print('Choose Y or N')
+            else:
+                break
+
         if choice_regulatory == 'Y':
             species = str(input('Enter the species to be analyzed: '))
             read_file_name = str(input('Enter the regulatory build Path and File name: ')).strip()
-            # Checks whether the input file is in gff format
+            # Check whether the input file is in gff format
             if read_file_name[-3:] != 'gff' and read_file_name[-4:] != 'gff3':
                 print('Inform file in gff format')
             else:
@@ -540,15 +534,16 @@ def fasta(non_overlap_list, file_name):
     print('[2] Searching for sequences at NCBI.')
     print('[3] Crossing information with other databases.')
     print('Wait for processing... Go have a cup of coffee.')
-    print('⤍', end=' ')
+    print('⤍ ', end='')
+
     cell_types_dict = dict()  # Used to build a dictionary by grouping cell types by activity
     cont_interval = 0
 
-    ## tem colocar a verificação para testar se o arquivo realmente foi lido
+    # You have to put the check to test if the file was actually read
     with open('tracks.json', 'r') as f:
         track_json = json.load(f)
 
-
+    # Start of Analysis
     try:
         for l1 in range(0, len(non_overlap_list)):
             process = False
@@ -570,24 +565,24 @@ def fasta(non_overlap_list, file_name):
                             v_id = non_overlap_list[l1][0]
                             v_seq_start = str(int(non_overlap_list[l1][4]) + 1)
                             v_seq_stop = str(int(non_overlap_list[l2][3]) - 1)
-                            # Accessing the NCBI database through the Entrez API
+                            # Accessing the NCBI database through the E-utilities - NCBI Entrez system
                             handle = Entrez.efetch(db='nuccore', id=v_id, seq_start=v_seq_start, seq_stop=v_seq_stop,
                                                    rettype='fasta', retmode='xml')
                             records = Entrez.parse(handle)
 
-                            # Assembling the FASTA format.
+                            # Assembling the FASTA sequence of the Selected Intervals
                             for record in records:
                                 line_cromossomo = record.get('TSeq_defline')
-                                ## pegando o chromosso par pesquisa na base de dados da california
+                                # Collecting the chromosome for research in the UCSC Genome Database
                                 pos_chrom_ini = line_cromossomo.index("chromosome") + len("chromosome") + 1
                                 pos_chrom_end = line_cromossomo.find(',', pos_chrom_ini)
                                 num_chrom = 'chr' + str(line_cromossomo[pos_chrom_ini:pos_chrom_end]).strip()
-                                # print(f'num_chrom = {num_chrom}')
-                                ## aqui começa a verificação na Base de dados da California
+
+                                # Start of verification in the UCSC Genome Database
                                 print_fast = False
                                 if california_analysis == 'Y':
                                     for k_track, v_track in track_json.items():
-                                        print(f'k_track = {k_track}')
+                                        # print(f'k_track = {k_track}')
                                         if k_track == 'genome':
                                             genome_search = v_track
                                         if k_track != 'genome':
@@ -595,33 +590,32 @@ def fasta(non_overlap_list, file_name):
                                             server = "https://api.genome.ucsc.edu/"
                                             ext = f"/getData/track?genome={genome_search};chrom={num_chrom};track={track};start={v_seq_start};end={v_seq_stop};maxItemsOutput=-1"
                                             # https://api.genome.ucsc.edu/getData/track?genome=sacCer3;track=sgdOther;chrom=chrXII;start=150164;end=151388;maxItemsOutput=-1
-                                            print(server + ext)
+                                            # print(server + ext)
                                             r = requests.get(server + ext, headers={"Content-Type": "application/json"})
                                             r.raise_for_status()
                                             jsonResponse = r.json()
-                                            print(jsonResponse)
+                                            # print(jsonResponse)
                                             pega_trilha = jsonResponse.get(track)
-                                            # print(f'pega_trilha = {pega_trilha}')
-                                            print(f'v_track = {v_track}')
+                                            # print(f'v_track = {v_track}')
                                             if pega_trilha != None:
-                                                # se o retorno o BD da california vier vazio
+                                                # if the return comes empty
                                                 if len(pega_trilha) == 0:
                                                     print_fast = True
-                                                # se o retorno o BD da california nao vier vazio mais a trilha no json for vazia
+                                                # if the return is not empty but the json trail is empty
                                                 elif len(v_track) == 0 and len(pega_trilha) > 0:
                                                     print_fast = False
 
                                                 elif len(v_track) > 0 and len(pega_trilha) > 0:
                                                     for val in v_track:
                                                         if str(val).upper().strip() in str(pega_trilha).upper().strip():
-                                                            # print(f'teve casamento aqui ... :{str(val).upper().strip()}')
                                                             print_fast = False
                                                             break
                                             if print_fast == False:
                                                 break
+                                else:
+                                    print_fast = True
 
 
-                                # print(f'california_analysis = {california_analysis} Print_fasta = {print_fast} ')
                                 if print_fast:
                                     line = ''
                                     file_w.write(
@@ -649,12 +643,13 @@ def fasta(non_overlap_list, file_name):
                                     file_w.write(line_fasta)
                                     file_w.write('\n')
                                     print('☕︎︎', end='')
+                                    cont_interval += 1
 
-                                    sleep(5)  # 2 second delay to avoid overloading the server
+                                    sleep(5)  # Delay to avoid overloading the server
                                     if choice_regulatory == 'Y':
-                                        # ------------------------------------------------------------------
-                                        #  Do research on Ensembl
-                                        # -------------------------------------------------------------------
+                                        # ------------------------------------------------------------------------------
+                                        # Researching on Ensembl REST GET "regulatory/species/:species/id/:id/activity"
+                                        # ------------------------------------------------------------------------------
                                         start_range = non_overlap_list[l1][3]
                                         end_range = non_overlap_list[l2][4]
                                         if non_overlap_list[9] != 'N':
@@ -685,7 +680,7 @@ def fasta(non_overlap_list, file_name):
                                                 ext = f"/regulatory/species/{species}/id/{id_search}?activity=1"
                                                 try:
                                                     r = requests.get(server + ext, headers={"Content-Type": "application/json"})
-                                                    print(server + ext)
+                                                    # print(server + ext)
                                                     r.raise_for_status()
                                                     jsonResponse = r.json()
                                                     # file_w.write(str(jsonResponse))
@@ -716,9 +711,9 @@ def fasta(non_overlap_list, file_name):
                                                 file_w.write('\n')
                                                 sleep(2)
 
-                                    # -------------------------------------------
-                                    # Ensembl Cross Reference
-                                    # -------------------------------------------
+                                    # ----------------------------------------------------------------------------------
+                                    #          Researching on Ensembl REST GET "xrefs/id/:id/all_levels"
+                                    # ----------------------------------------------------------------------------------
 
                                     # Looking for id first gene
                                     if choice_Cross_References == 'Y':
@@ -764,7 +759,7 @@ def fasta(non_overlap_list, file_name):
                                             file_w.write('\n')
                                             file_w.write('\n')
 
-                                        # Looking for id second gene
+                                        # Looking for the Second gene ID
                                         attributes = ''
                                         attributes = non_overlap_list[l2][8]
                                         if 'ID=gene' in attributes:
@@ -803,13 +798,12 @@ def fasta(non_overlap_list, file_name):
                                             file_w.write('\n')
                                             file_w.write('\n')
                                     sleep(1)
-                                    cont_interval += 1
                         except Exception as err:
-                            print(err)
-
+                            print(f'An err occurred: {err}')
 
     except Exception as erro:
-        print(erro)
+        print(f'An erro occurred: {erro}')
+
     finally:
         file_w.write('\n')
         file_w.write('Number of intergenic intervals: ' + str(cont_interval))
@@ -824,9 +818,9 @@ def fasta(non_overlap_list, file_name):
     print('=-' * 15)
 
 
-# ---------------------------------------------------------------------------------
-#                                   Program Start
-# ---------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------
+#                                                      Program Start
+# ----------------------------------------------------------------------------------------------------------------------
 
 def main():
     option = ''
@@ -841,15 +835,16 @@ def main():
         ordered_dictionary = assemble_table(non_overlap_list, interval, len(list_gene), total_amount_overlap)
 
         while True:
-            plot = str(input('Deseja plotar a tabela de Genes ? (Y/ N):')).strip().upper()[0]
+            plot = str(input('Would you like to plot the Genes chart? (Y/N): ')).strip().upper()[0]
             if plot in 'YN':
                 break
             else:
                 print('Error, answer only Y or N.')
 
         if plot == 'Y':
-            interval_plot = 6
-            interval_plot = input('Informe o intervalo da plotagem (default 6) :')
+            interval_plot = input('Enter the plot range (Default 6):')
+            if str(interval_plot) == "":
+                interval_plot = 6
 
             plot_genes(ordered_dictionary, int(interval_plot), file_name)
 
@@ -874,11 +869,8 @@ def main():
             print('End of Program! Have a Good One.')
             break
         else:
-            input(os.name)
-            if os.name == "nt":
-                os.system("cls")
-            else:
-                os.system("clear")
-
+            # input(os.name)
+            os.environ['TERM'] = 'xterm'
+            os.system('cls' if os.name == 'nt' else 'clear')
 
 main()
