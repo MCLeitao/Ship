@@ -1,7 +1,11 @@
-# SHIP • Safe Harbor Identification Program
-SHIP is Python program for the identification of Genomic Safe Harbors (GSHs) in eukaryotic organisms.
+# :ship: SHIP: Safe Harbor Identification Program
+_Software for the identification of Genomic Safe Harbors (GSHs) in eukaryotic organisms_
 
-SHIP software was written in the Python 3.9 programming language using standard libraries, which implies a simplified installation process and transparent use on multiple platforms, such as Linux and Windows.
+## Description
+
+Identified intergenic Genomic Safe Harbors (GSHs) in any annotated eukaryotic genome.
+
+A Software with a graphical user interface written in the Python 3.9 using standard libraries, which implies a simplified installation process and transparent use on multiple platforms, such as Linux and Windows.
 
 The input consists of (1) the genome annotation file of the target organism, in the GFF3 format (Generic Feature Format); and the Features and [Track](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html) files in JSON format. 
 
@@ -10,14 +14,43 @@ For the identification of GSHs based on biological premises, a series of annotat
 The software performs a combinatorial analysis to identify **intergenic regions** and the direction of their flanking genes. Subsequently, intergenic regions presenting the genetic elements described in the track.json are excluded.
 
 ## Contents
+- Dependencies
+- Usage
+  - Inputs
+  - Navigating
+  - Outputs
+- Reference
+- License
 
-## Description
+## Dependencies
 
-## Features
+
 
 ## Usage
 
 ### Inputs
+
+**Before** running the program you will need all the following files in the same directory.
+
+1. The genome annotation file of the target organism, in the GFF or [GFF3](https://gmod.org/wiki/GFF3) format. (Ex. saccharomyces_cerevisiae.gff3)
+   
+2. The Feature list that SHIP will use to analyze the GFF file (Ex. features.json)
+   * At the beginning, the sofware will show you all the features present in the GFF file
+     
+3. The [Track](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html) list that SHIP will use to check the presence in each intergenic region in UCSC Genome Browser Database (Ex. tracks.json)
+   
+ 
+ **During** running the user needs to choose the following key parameters.
+
+1. Neighbour gene orientation
+   * CONVERGENT (+ -)
+   * DIVERGENT (- +)
+   * TANDEM (+ + / - -)
+
+2. Intergenic size range
+   * Minimum size of the intergenic region (Standard 1500)
+   * Maximum size of the intergenic region (Standard 2000)
+
 
 ### Navigating
 
@@ -121,12 +154,8 @@ pGSH List (with Regulatory Analysis)
 ![Screenshot 2024-07-19 at 19 24 25](https://github.com/user-attachments/assets/0c40effb-26db-4847-80ee-b7ad23b38342)
 
 
-
-
-## Data
-
-## Usage
-
 ## Reference
-Please cite the following preprint when referencing Ship.
+...
 
+##  License
+      
