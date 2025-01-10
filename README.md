@@ -3,8 +3,6 @@ _Software for the identification of Genomic Safe Harbors (GSHs) in eukaryotic or
 
 ## Description
 
-Identified intergenic Genomic Safe Harbors (GSHs) in any annotated eukaryotic genome.
-
 A Software with a graphical user interface written in the Python 3.9 using standard libraries, which implies a simplified installation process and transparent use on multiple platforms, such as Linux and Windows.
 
 The input consists of (1) the genome annotation file of the target organism, in the GFF3 format (Generic Feature Format); and the Features and [Track](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html) files in JSON format. 
@@ -177,4 +175,4 @@ Leitão et al. SHIP: A Computational Tool for the Systematic Identification of G
 ##  License
 * MIT License
 * Copyright (c) 2023 Matheus de Castro Leitão
-* Software registration under process number: BR512023002017-6
+* Software registered under process number BR512023002017-6
