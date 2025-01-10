@@ -14,45 +14,74 @@ For the identification of GSHs based on biological premises, a series of annotat
 The software performs a combinatorial analysis to identify **intergenic regions** and the direction of their flanking genes. Subsequently, intergenic regions presenting the genetic elements described in the track.json are excluded.
 
 ## Contents
-- Dependencies
-- Usage
-  - Inputs
-  - Navigating
-  - Outputs
-- Reference
-- License
+- [Dependencies](https://github.com/MCLeitao/Ship/edit/main/README.md#dependencies)
+- [Usage](https://github.com/MCLeitao/Ship/edit/main/README.md#usage)
+  - [Inputs](https://github.com/MCLeitao/Ship/edit/main/README.md#inputs)
+  - [Outputs](https://github.com/MCLeitao/Ship/edit/main/README.md#outputs)
+- [Navigating](https://github.com/MCLeitao/Ship/edit/main/README.md#navigating)
+- [Reference](https://github.com/MCLeitao/Ship/edit/main/README.md#reference)
+- [License](https://github.com/MCLeitao/Ship/edit/main/README.md#license)
 
 ## Dependencies
 
-
+* Python 3.9
+* Packages (version): bio (1.5.9); biopython (1.81); biothings-client (0.3.0; certifi (2023.5.7); charset-normalizer (3.1.0); contourpy (1.0.7); cycler (0.11.0); fonttools (4.39.4); gprofiler-official (1.0.0); idna (3.4); kiwisolver (1.4.4); matplotlib (3.7.1); mygene (3.2.2); numpy (1.24.3); packaging (23.1); pandas (2.0.2); Pillow (9.5.0); platformdirs (3.5.1); pooch (1.7.0); pyparsing (3.0.9); python-dateutil (2.8.2); pytz (2023.3); requests (2.31.0); six (1.16.0); tqdm (4.65.0); tzdata (2023.3); urllib3 (2.0.3).
 
 ## Usage
 
 ### Inputs
 
-**Before** running the program you will need all the following files in the same directory.
+To use the program, you must have an NCBI account due to the Database API Usage Guidelines and Requirements ([Entrez](https://www.ncbi.nlm.nih.gov/books/NBK25497/#chapter2.Usage_Guidelines_and_Requiremen)). The email registered in this account is required.
 
-1. The genome annotation file of the target organism, in the GFF or [GFF3](https://gmod.org/wiki/GFF3) format. (Ex. saccharomyces_cerevisiae.gff3)
-   
-2. The Feature list that SHIP will use to analyze the GFF file (Ex. features.json)
-   * At the beginning, the sofware will show you all the features present in the GFF file
+<ins>Before running the program you will need all the following files in the same directory</ins>
+
+1. The genome annotation file of the target organism, in the GFF or [GFF3](https://gmod.org/wiki/GFF3) format. (Ex. `saccharomyces_cerevisiae.gff3`)
+   * If it is a multicellular organism, there is the possibility of adding a GFF file with the [Regulatory Features](https://www.ensembl.org/info/genome/funcgen/index.html) of each cell type (Ex. `homo_sapiens-regulatory_features.gff`)
      
-3. The [Track](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html) list that SHIP will use to check the presence in each intergenic region in UCSC Genome Browser Database (Ex. tracks.json)
+2. The Feature list that SHIP will use to analyze the GFF file (Ex. `features.json`)
+   * At the beginning, the software will show you all the features present in the GFF file
+     
+3. The [Track](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html) list that SHIP will use to check the presence in each intergenic region in UCSC Genome Browser Database (Ex. `tracks.json`)
    
- 
- **During** running the user needs to choose the following key parameters.
+  
+<ins>During running the user needs to choose the following key parameters</ins>
 
 1. Neighbour gene orientation
-   * CONVERGENT (+ -)
-   * DIVERGENT (- +)
-   * TANDEM (+ + / - -)
+   * Convergent (+ -)
+   * Divergent  (- +)
+   * Tandem     (+ + / - -)
 
 2. Intergenic size range
-   * Minimum size of the intergenic region (Standard 1500)
    * Maximum size of the intergenic region (Standard 2000)
+   * Minimum size of the intergenic region (Standard 1500)
+
+The user also needs to indicate the analyses that should be performed
+
+1. UCSC Database
+2. Ensembl (Cross References)
+3. Regulatory analysis (Multicellular organisms)
+
+### Outputs
+All files will be generated in the same directory as the input files.
+
+1. Genomic Overview
+  ![Saccharomyces_cerevisiae R64-1-1 49 _plot](https://github.com/user-attachments/assets/ee3f9a87-6d5d-4fbe-9ff5-0cd766eafcdd)
+
+2. pGSH List 
+   * Description of neighboring genes
+   * Fast sequence of the intergenic region
+   * Description of Regulatory 
+   * Additional information for each neighboring gene
+
+  _Saccharomyces cerevisiae_
+  <img width="1002" alt="Screenshot 2024-07-18 at 16 07 22" src="https://github.com/user-attachments/assets/53abd587-9cec-4e4a-bdf8-7d0b2ad367f5">
+
+  _Homo sapiens_ (with Regulatory Analysis)
+  ![Screenshot 2024-07-19 at 19 24 25](https://github.com/user-attachments/assets/0c40effb-26db-4847-80ee-b7ad23b38342)
 
 
-### Navigating
+## Navigating
+_Practical example running the software_ 
 
 ```
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -142,20 +171,8 @@ File generated with the results: /Users/user1/Documents/target_organism_result_S
 Do you want to analyze another GFF file? ...
 ```
 
-### Outputs
-
-Genomic Overview
-![Saccharomyces_cerevisiae R64-1-1 49 _plot](https://github.com/user-attachments/assets/ee3f9a87-6d5d-4fbe-9ff5-0cd766eafcdd)
-
-pGSH List (without Regulatory Analysis)
-<img width="1002" alt="Screenshot 2024-07-18 at 16 07 22" src="https://github.com/user-attachments/assets/53abd587-9cec-4e4a-bdf8-7d0b2ad367f5">
-
-pGSH List (with Regulatory Analysis)
-![Screenshot 2024-07-19 at 19 24 25](https://github.com/user-attachments/assets/0c40effb-26db-4847-80ee-b7ad23b38342)
-
-
 ## Reference
-...
+Leitão et al. (In Review)
 
 ##  License
       
