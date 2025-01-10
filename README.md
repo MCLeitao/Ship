@@ -172,7 +172,9 @@ Do you want to analyze another GFF file? ...
 ```
 
 ## Reference
-Leitão et al. (In Review)
+Leitão et al. SHIP: A Computational Tool for the Systematic Identification of Genomic Safe Harbors for Stable Gene Insertion in Eukaryotes. In Review
 
 ##  License
-      
+* MIT License
+* Copyright (c) 2023 Matheus de Castro Leitão
+* Software registration under process number: BR512023002017-6
