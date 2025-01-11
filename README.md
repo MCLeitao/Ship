@@ -1,6 +1,7 @@
 # :ship: SHIP: Safe Harbor Identification Program
 _Software for the identification of Genomic Safe Harbors (GSHs) in eukaryotic organisms_
 
+
 ## Description
 
 A Software with a graphical user interface written in Python 3.9 using standard libraries, which implies a simplified installation process and a possibility of being used on multiple platforms, such as Linux and Windows.
@@ -11,6 +12,7 @@ For the identification of GSHs based on biological premises, a series of annotat
 
 The software performs a combinatorial analysis to identify **intergenic regions** and the direction of their flanking genes. Subsequently, intergenic regions presenting the genetic elements described in the track.json are excluded.
 
+
 ## Contents
 - [Dependencies](https://github.com/MCLeitao/Ship/edit/main/README.md#dependencies)
 - [Usage](https://github.com/MCLeitao/Ship/edit/main/README.md#usage)
@@ -20,10 +22,12 @@ The software performs a combinatorial analysis to identify **intergenic regions*
 - [Reference](https://github.com/MCLeitao/Ship/edit/main/README.md#reference)
 - [License](https://github.com/MCLeitao/Ship/edit/main/README.md#license)
 
+
 ## Dependencies
 
 * Python 3.9
 * Packages (version): bio (1.5.9); biopython (1.81); biothings-client (0.3.0; certifi (2023.5.7); charset-normalizer (3.1.0); contourpy (1.0.7); cycler (0.11.0); fonttools (4.39.4); gprofiler-official (1.0.0); idna (3.4); kiwisolver (1.4.4); matplotlib (3.7.1); mygene (3.2.2); numpy (1.24.3); packaging (23.1); pandas (2.0.2); Pillow (9.5.0); platformdirs (3.5.1); pooch (1.7.0); pyparsing (3.0.9); python-dateutil (2.8.2); pytz (2023.3); requests (2.31.0); six (1.16.0); tqdm (4.65.0); tzdata (2023.3); urllib3 (2.0.3).
+
 
 ## Usage
 
@@ -33,14 +37,18 @@ To use the program, you must have an NCBI account due to the Database API Usage 
 
 <ins>Before running the program you will need all the following files in the same directory</ins>
 
-1. The genome annotation file of the target organism, in the GFF or [GFF3](https://gmod.org/wiki/GFF3) format. (Ex. `saccharomyces_cerevisiae.gff3`)
+1. The genome annotation file of the target organism, in the GFF or [GFF3](https://gmod.org/wiki/GFF3) format. (Ex. [`Saccharomyces_cerevisiae.R64-1-1.49.gff3`](examples/yeast/Saccharomyces_cerevisiae.R64-1-1.49.gff3))
    * If it is a multicellular organism, there is the possibility of adding a GFF file with the [Regulatory Features](https://www.ensembl.org/info/genome/funcgen/index.html) of each cell type (Ex. `homo_sapiens-regulatory_features.gff`)
      
-2. The Feature list that SHIP will use to analyze the GFF file (Ex. `features.json`)
+2. The Feature list that SHIP will use to analyze the GFF file in JSON format. (Ex. [`features.json`](ship/features.json))
    * At the beginning, the software will show you all the features present in the GFF file
      
-3. The [Track](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html) list that SHIP will use to check the presence in each intergenic region in UCSC Genome Browser Database (Ex. `tracks.json`)
-   
+3. The [Track](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html) list that SHIP will use to check the presence in each intergenic region in UCSC Genome Browser Database in JSON format. (Ex. [`tracks.json`](examples/yeast/tracks.json))
+
+
+  > [!WARNING]
+  > Do not change the name of the JSON files.
+
   
 <ins>During running the user needs to choose the following key parameters</ins>
 
