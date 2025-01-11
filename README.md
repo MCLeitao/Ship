@@ -1,12 +1,11 @@
-# :ship: SHIP: Safe Harbor Identification Program
-_Software for the identification of Genomic Safe Harbors (GSHs) in eukaryotic organisms_
-
+# :anchor: SHIP: Safe Harbor Identification Program
+_Software for the identification of Genomic Safe Harbors (GSHs) in eukaryotic organisms_<br/>
 
 ## Description
 
 A Software with a graphical user interface written in Python 3.9 using standard libraries, which implies a simplified installation process and a possibility of being used on multiple platforms, such as Linux and Windows.
 
-The input consists of (1) the genome annotation file of the target organism, in the GFF3 format (Generic Feature Format); and (2) the Features and [Track](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html) files in JSON format. 
+The input consists of (1) the genome annotation file of the target organism, in the GFF3 format (Generic Feature Format); and (2) the Features and [Track](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html) files in JSON format.
 
 For the identification of GSHs based on biological premises, a series of annotation attributes were selected to direct a search for regions with a minimum size and devoid of genes, but also that do not harbor regulatory elements, such as binding sites for transcription factors, DNA hypermethylation and state of chromatin and histone alterations, which are evaluated using information collected in external databases through the [Entrez Programming Utilities](https://www.ncbi.nlm.nih.gov/books/NBK25501/) (E-utilities) Application Programming Interface (API) National Center for Biotechnology Information (NCBI), [Ensembl REST API](https://rest.ensembl.org/) and the [UCSC Genome Browser](https://genome.ucsc.edu/).
 
@@ -35,22 +34,22 @@ The software performs a combinatorial analysis to identify **intergenic regions*
 
 To use the program, you must have an NCBI account due to the Database API Usage Guidelines and Requirements ([Entrez](https://www.ncbi.nlm.nih.gov/books/NBK25497/#chapter2.Usage_Guidelines_and_Requiremen)). The email registered in this account is required.
 
-<ins>Before running the program you will need all the following files in the same directory</ins>
+
+<br/><ins>Before running the program you will need all the following files in the same directory</ins>
 
 1. The genome annotation file of the target organism, in the GFF or [GFF3](https://gmod.org/wiki/GFF3) format. (Ex. [`Saccharomyces_cerevisiae.R64-1-1.49.gff3`](examples/yeast/Saccharomyces_cerevisiae.R64-1-1.49.gff3))
    * If it is a multicellular organism, there is the possibility of adding a GFF file with the [Regulatory Features](https://www.ensembl.org/info/genome/funcgen/index.html) of each cell type (Ex. `homo_sapiens-regulatory_features.gff`)
-     
+
 2. The Feature list that SHIP will use to analyze the GFF file in JSON format. (Ex. [`features.json`](ship/features.json))
    * At the beginning, the software will show you all the features present in the GFF file
-     
+
 3. The [Track](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html) list that SHIP will use to check the presence in each intergenic region in UCSC Genome Browser Database in JSON format. (Ex. [`tracks.json`](examples/yeast/tracks.json))
 
+> [!WARNING]
+> Do not change the name of the JSON files.
 
-  > [!WARNING]
-  > Do not change the name of the JSON files.
 
-  
-<ins>During running the user needs to choose the following key parameters</ins>
+<br/><ins>During running the user needs to choose the following key parameters</ins>
 
 1. Neighbour gene orientation
    * Convergent (+ -)
@@ -67,16 +66,17 @@ The user also needs to indicate the analyses that should be performed
 2. Ensembl (Cross References)
 3. Regulatory analysis (Multicellular organisms)
 
+---
 ### Outputs
 All files will be generated in the same directory as the input files.
 
 1. Genomic Overview
   ![Saccharomyces_cerevisiae R64-1-1 49 _plot](https://github.com/user-attachments/assets/ee3f9a87-6d5d-4fbe-9ff5-0cd766eafcdd)
 
-2. pGSH List 
+2. pGSH List
    * Description of neighboring genes
    * Fast sequence of the intergenic region
-   * Description of Regulatory 
+   * Description of Regulatory
    * Additional information for each neighboring gene
 
   _Saccharomyces cerevisiae_
@@ -87,7 +87,7 @@ All files will be generated in the same directory as the input files.
 
 
 ## Navigating
-_Practical example running the software_ 
+_Practical example running the software_
 
 ```
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
