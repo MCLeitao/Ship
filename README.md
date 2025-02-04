@@ -13,7 +13,7 @@ The software performs a combinatorial analysis to identify **intergenic regions*
 
 
 ## Contents
-- [Dependencies](https://github.com/MCLeitao/Ship/main/README.md#dependencies)
+- [Dependencies](https://github.com/MCLeitao/Ship/blob/main/README.md#dependencies)
 - [Usage](https://github.com/MCLeitao/Ship/edit/main/README.md#usage)
   - [Inputs](https://github.com/MCLeitao/Ship/edit/main/README.md#inputs)
   - [Outputs](https://github.com/MCLeitao/Ship/edit/main/README.md#outputs)
