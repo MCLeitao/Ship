@@ -13,13 +13,13 @@ The software performs a combinatorial analysis to identify **intergenic regions*
 
 
 ## Contents
-- [Dependencies](https://github.com/MCLeitao/Ship/blob/main/README.md#dependencies)
-- [Usage](https://github.com/MCLeitao/Ship/edit/main/README.md#usage)
-  - [Inputs](https://github.com/MCLeitao/Ship/edit/main/README.md#inputs)
-  - [Outputs](https://github.com/MCLeitao/Ship/edit/main/README.md#outputs)
-- [Navigating](https://github.com/MCLeitao/Ship/edit/main/README.md#navigating)
-- [Reference](https://github.com/MCLeitao/Ship/edit/main/README.md#reference)
-- [License](https://github.com/MCLeitao/Ship/edit/main/README.md#license)
+- [Dependencies](https://github.com/MCLeitao/Ship#dependencies)
+- [Usage](https://github.com/MCLeitao/Ship#usage)
+  - [Inputs](https://github.com/MCLeitao/Ship#inputs)
+  - [Outputs](https://github.com/MCLeitao/Ship#outputs)
+- [Navigating](https://github.com/MCLeitao/Ship#navigating)
+- [Reference](https://github.com/MCLeitao/Ship#reference)
+- [License](https://github.com/MCLeitao/Ship#license)
 
 
 ## Dependencies
